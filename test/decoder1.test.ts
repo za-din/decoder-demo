@@ -16,7 +16,7 @@ test('decode with reduced rate within one day', async () => {
     },
   ];
 
-  const cdrRates: CdrRate[] = [
+  const cdrRates: CdrRateJson[] = [
     {
       rateId: "1000",
       countryCode: 673,
@@ -39,30 +39,33 @@ test('decode with reduced rate within one day', async () => {
   expect(charges[0].chargeAmount).toBe(300 * 0.1); // 300 seconds * 0.1 rate = 30
 });
 
-test('decode with standard rate within one day', () => {
+test('decode with standard rate within one day', async () => {
   // Arrange
   const callDetailRecords: CallerDetailRecord[] = [
     {
-      //should error if use reduced rate time example 7AM
       answerDateTime: new Date(2020, 0, 1, 10, 0, 0, 0), // 10:00 AM
       endDateTime: new Date(2020, 0, 1, 10, 5, 0, 0), // 10:05 AM
       calledNumber: 6738852329,
     },
   ];
 
-  const cdrRates: CdrRate[] = [
+  const cdrRates: CdrRateJson[] = [
     {
+      rateId: "1000",
       countryCode: 673,
-      standardRate: 0.5, // Standard rate applies based on time
+      standardRate: 0.5,
       reducedRate: 0.1,
-      economic: false, // Doesn't affect the rate applied
+      description: "Test Country",
+      dialPlan: "673",
+      chargingBlockId: "2",
+      accessCode: "0"
     },
   ];
 
   const decoder = new Decoder();
 
   // Act
-  const charges: ChargeDetail[] = decoder.decode(callDetailRecords, cdrRates);
+  const charges: ChargeDetail[] = await decoder.decode(callDetailRecords);
 
   // Assert
   expect(charges).toHaveLength(1);
