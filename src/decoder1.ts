@@ -7,7 +7,7 @@ export type CallerDetailRecord = {
   calledNumber: number;
 };
 
-export type CdrRate = {
+export type CdrRateJson = {
   rateId: string;
   countryCode: number;
   standardRate: number;
@@ -17,6 +17,12 @@ export type CdrRate = {
   chargingBlockId: string;
   accessCode: string;
 };
+
+export type CdrRate = CdrRateJson & {
+  economic: boolean;
+};
+
+export type CdrRateTable = CdrRateJson[];
 
 export type ChargeDetail = {
   chargeAmount: number;
