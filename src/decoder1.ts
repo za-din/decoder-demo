@@ -1,3 +1,6 @@
+import fs from 'fs/promises';
+import path from 'path';
+
 export type CallerDetailRecord = {
   answerDateTime: Date;
   endDateTime: Date;
@@ -5,10 +8,14 @@ export type CallerDetailRecord = {
 };
 
 export type CdrRate = {
+  rateId: string;
   countryCode: number;
   standardRate: number;
   reducedRate: number;
-  economic: boolean;
+  description: string;
+  dialPlan: string;
+  chargingBlockId: string;
+  accessCode: string;
 };
 
 export type ChargeDetail = {
@@ -16,16 +23,15 @@ export type ChargeDetail = {
 };
 
 export class Decoder {
-  decode(
-    callerDetailRecords: CallerDetailRecord[],
-    cdrRates: CdrRate[]
-  ): ChargeDetail[] {
+  async decode(callerDetailRecords: CallerDetailRecord[]): Promise<ChargeDetail[]> {
+    const cdrFilePath = path.join(__dirname, '../cdr.json');
+    const cdrData = await fs.readFile(cdrFilePath, 'utf-8');
+    const cdrRates: CdrRate[] = JSON.parse(cdrData);
+
     return callerDetailRecords.map((record) => {
       const rateDetail = this.getRate(record, cdrRates);
 
       if (!rateDetail) {
-        // Handle the case where rateDetail is undefined
-        // For example, apply a default rate or return a charge with a default amount
         return {
           chargeAmount: this.calculateDefaultCharge(record),
         };
@@ -44,7 +50,7 @@ export class Decoder {
         chargeAmount = this.calculateSpanRateCharge(record, rateDetail);
       } else {
         chargeAmount =
-          conversationTime * this.getSingleRate(record, rateDetail); // This should correctly use the reduced rate
+          conversationTime * this.getSingleRate(record, rateDetail);
       }
 
       return {
@@ -68,21 +74,17 @@ export class Decoder {
     cdrRates: CdrRate[]
   ): CdrRate | undefined {
     return cdrRates.find((rate) =>
+      record.calledNumber &&
       record.calledNumber.toString().startsWith(rate.countryCode.toString())
     );
   }
 
-  private getSingleRate(
-    record: CallerDetailRecord,
-    rateDetail: CdrRate
-  ): number {
+  private getSingleRate(record: CallerDetailRecord, rateDetail: CdrRate): number {
     const callHour = record.answerDateTime.getHours();
-    // Apply reduced rate if within reduced rate hours (e.g., 0:00 - 7:59 AM)
-    if (callHour >= 0 && callHour < 8) {
-      return rateDetail.reducedRate;
-    }
-    // Apply standard rate otherwise
-    return rateDetail.standardRate;
+    const isEconomic = rateDetail.accessCode === "95";
+    const rate = isEconomic ? rateDetail.reducedRate : 
+      (callHour >= 0 && callHour < 8) ? rateDetail.reducedRate : rateDetail.standardRate;
+    return rate;
   }
 
   private spansMultipleDays(record: CallerDetailRecord): boolean {
@@ -139,7 +141,7 @@ export class Decoder {
       record.endDateTime,
       record.answerDateTime
     );
-
+  
     if (startHour < 8 && endHour < 8) {
       return conversationTime * rateDetail.reducedRate;
     } else if (startHour >= 8 && endHour >= 8) {
@@ -158,6 +160,7 @@ export class Decoder {
       );
     }
   }
+  
 
   private calculateDefaultCharge(record: CallerDetailRecord): number {
     // Default charge logic here, e.g., apply a default rate per second

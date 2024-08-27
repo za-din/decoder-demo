@@ -6,7 +6,7 @@ import {
   type ChargeDetail,
 } from '../src/decoder1.js';
 
-test('decode with reduced rate within one day', () => {
+test('decode with reduced rate within one day', async () => {
   // Arrange
   const callDetailRecords: CallerDetailRecord[] = [
     {
@@ -18,17 +18,21 @@ test('decode with reduced rate within one day', () => {
 
   const cdrRates: CdrRate[] = [
     {
+      rateId: "1000",
       countryCode: 673,
-      standardRate: 0.5, // Assuming standard rate is 0.5 per second
-      reducedRate: 0.1, // Reduced rate is 0.1 per second
-      economic: true, // Doesn't affect the rate applied
+      standardRate: 0.5,
+      reducedRate: 0.1,
+      description: "Test Country",
+      dialPlan: "673",
+      chargingBlockId: "2",
+      accessCode: "0"
     },
   ];
 
   const decoder = new Decoder();
 
   // Act
-  const charges: ChargeDetail[] = decoder.decode(callDetailRecords, cdrRates);
+  const charges: ChargeDetail[] = await decoder.decode(callDetailRecords);
 
   // Assert
   expect(charges).toHaveLength(1);

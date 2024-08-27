@@ -1,0 +1,5472 @@
+[
+  {
+    "rateId": "1000",
+    "countryCode": 93,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Afghanistan",
+    "dialPlan": "93",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1258",
+    "countryCode": 93,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Afghanistan Economic call",
+    "dialPlan": "93",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1001",
+    "countryCode": 1907,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Alaska",
+    "dialPlan": "1907",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1259",
+    "countryCode": 1907,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "Alaska Economic call",
+    "dialPlan": "1907",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1002",
+    "countryCode": 355,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Albania",
+    "dialPlan": "355",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1260",
+    "countryCode": 355,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Albania Economic call",
+    "dialPlan": "355",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1003",
+    "countryCode": 213,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Algeria",
+    "dialPlan": "213",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1261",
+    "countryCode": 213,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Algeria Economic call",
+    "dialPlan": "213",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1004",
+    "countryCode": 376,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Andorra",
+    "dialPlan": "376",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1262",
+    "countryCode": 376,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Andorra Economic call",
+    "dialPlan": "376",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1005",
+    "countryCode": 244,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Angola",
+    "dialPlan": "244",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1263",
+    "countryCode": 244,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Angola Economic call",
+    "dialPlan": "244",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1006",
+    "countryCode": 1264,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Anguilla",
+    "dialPlan": "1264",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1264",
+    "countryCode": 1264,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Anguilla Economic call",
+    "dialPlan": "1264",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1007",
+    "countryCode": 1268,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Antigua & Barbuda",
+    "dialPlan": "1268",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1265",
+    "countryCode": 1268,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Antigua & Barbuda Economic call",
+    "dialPlan": "1268",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1008",
+    "countryCode": 54,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Argentina",
+    "dialPlan": "54",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1266",
+    "countryCode": 54,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Argentina Economic call",
+    "dialPlan": "54",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1009",
+    "countryCode": 374,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Armenia",
+    "dialPlan": "374",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1267",
+    "countryCode": 374,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Armenia Economic call",
+    "dialPlan": "374",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1010",
+    "countryCode": 297,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Aruba",
+    "dialPlan": "297",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1268",
+    "countryCode": 297,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Aruba Economic call",
+    "dialPlan": "297",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1011",
+    "countryCode": 247,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Ascension Island",
+    "dialPlan": "247",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1269",
+    "countryCode": 247,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ascension Island Economic call",
+    "dialPlan": "247",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1012",
+    "countryCode": 61,
+    "standardRate": 0.15,
+    "reducedRate": 0.13,
+    "description": "Australia",
+    "dialPlan": "61",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1270",
+    "countryCode": 61,
+    "standardRate": 0.04,
+    "reducedRate": 0.04,
+    "description": "Australia Economic call",
+    "dialPlan": "61",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1013",
+    "countryCode": 672,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Australia Ext. Terr.",
+    "dialPlan": "672",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1271",
+    "countryCode": 61,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "Australia Mobile Economic call",
+    "dialPlan": "614",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1014",
+    "countryCode": 43,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Austria",
+    "dialPlan": "43",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1272",
+    "countryCode": 43,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Austria Economic call",
+    "dialPlan": "43",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1015",
+    "countryCode": 994,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Azerbaijani",
+    "dialPlan": "994",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1273",
+    "countryCode": 994,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Azerbaijani Economic call",
+    "dialPlan": "994",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1016",
+    "countryCode": 1242,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Bahamas",
+    "dialPlan": "1242",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1274",
+    "countryCode": 1242,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Bahamas Economic call",
+    "dialPlan": "1242",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1017",
+    "countryCode": 973,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Bahrain",
+    "dialPlan": "973",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1275",
+    "countryCode": 973,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Bahrain Economic call",
+    "dialPlan": "973",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1018",
+    "countryCode": 880,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Bangladesh",
+    "dialPlan": "880",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1276",
+    "countryCode": 880,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "Bangladesh Economic call",
+    "dialPlan": "880",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1542",
+    "countryCode": 880,
+    "standardRate": 0.025,
+    "reducedRate": 0.025,
+    "description": "Bangladesh SuperEconomic call",
+    "dialPlan": "880",
+    "chargingBlockId": "2",
+    "accessCode": "99"
+  },
+  {
+    "rateId": "1019",
+    "countryCode": 1246,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Barbados",
+    "dialPlan": "1246",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1277",
+    "countryCode": 1246,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Barbados Economic call",
+    "dialPlan": "1246",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1020",
+    "countryCode": 375,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Belarus",
+    "dialPlan": "375",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1278",
+    "countryCode": 375,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Belarus Economic call",
+    "dialPlan": "375",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1021",
+    "countryCode": 32,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Belgium",
+    "dialPlan": "32",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1279",
+    "countryCode": 32,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Belgium Economic call",
+    "dialPlan": "32",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1022",
+    "countryCode": 501,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Belize",
+    "dialPlan": "501",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1280",
+    "countryCode": 501,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Belize Economic call",
+    "dialPlan": "501",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1023",
+    "countryCode": 229,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Benin",
+    "dialPlan": "229",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1281",
+    "countryCode": 229,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Benin Economic call",
+    "dialPlan": "229",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1024",
+    "countryCode": 1441,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Bermuda",
+    "dialPlan": "1441",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1282",
+    "countryCode": 1441,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Bermuda Economic call",
+    "dialPlan": "1441",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1025",
+    "countryCode": 975,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Bhutan",
+    "dialPlan": "975",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1283",
+    "countryCode": 975,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Bhutan Economic call",
+    "dialPlan": "975",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1026",
+    "countryCode": 591,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Bolivia",
+    "dialPlan": "591",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1284",
+    "countryCode": 591,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Bolivia Economic call",
+    "dialPlan": "591",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1027",
+    "countryCode": 387,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Bosnia",
+    "dialPlan": "387",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1285",
+    "countryCode": 387,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Bosnia Economic call",
+    "dialPlan": "387",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1028",
+    "countryCode": 267,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Botswana",
+    "dialPlan": "267",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1286",
+    "countryCode": 267,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Botswana Economic call",
+    "dialPlan": "267",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1029",
+    "countryCode": 55,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Brazil",
+    "dialPlan": "55",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1287",
+    "countryCode": 55,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Brazil Economic call",
+    "dialPlan": "55",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1030",
+    "countryCode": 359,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Bulgaria",
+    "dialPlan": "359",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1288",
+    "countryCode": 359,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Bulgaria Economic call",
+    "dialPlan": "359",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1031",
+    "countryCode": 226,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Burkina Faso",
+    "dialPlan": "226",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1289",
+    "countryCode": 226,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Burkina Faso Economic call",
+    "dialPlan": "226",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1032",
+    "countryCode": 257,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Burundi",
+    "dialPlan": "257",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1290",
+    "countryCode": 257,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Burundi Economic call",
+    "dialPlan": "257",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1033",
+    "countryCode": 855,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Cambodia",
+    "dialPlan": "855",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1291",
+    "countryCode": 855,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Cambodia Economic call",
+    "dialPlan": "855",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1034",
+    "countryCode": 237,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Cameroon",
+    "dialPlan": "237",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1292",
+    "countryCode": 237,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Cameroon Economic call",
+    "dialPlan": "237",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1035",
+    "countryCode": 1,
+    "standardRate": 0.15,
+    "reducedRate": 0.13,
+    "description": "Canada",
+    "dialPlan": "1",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1293",
+    "countryCode": 1,
+    "standardRate": 0.04,
+    "reducedRate": 0.04,
+    "description": "Canada Economic call",
+    "dialPlan": "1",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1037",
+    "countryCode": 3428,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Canary Island",
+    "dialPlan": "3428",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1036",
+    "countryCode": 3422,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Canary Island",
+    "dialPlan": "3422",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1295",
+    "countryCode": 3428,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Canary Island Economic call",
+    "dialPlan": "3428",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1294",
+    "countryCode": 3422,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Canary Island Economic call",
+    "dialPlan": "3422",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1038",
+    "countryCode": 238,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Cape Verde",
+    "dialPlan": "238",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1296",
+    "countryCode": 238,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Cape Verde Economic call",
+    "dialPlan": "238",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1039",
+    "countryCode": 1345,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Cayman Island",
+    "dialPlan": "1345",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1297",
+    "countryCode": 1345,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Cayman Island Economic call",
+    "dialPlan": "1345",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1040",
+    "countryCode": 236,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Central African Rep.",
+    "dialPlan": "236",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1298",
+    "countryCode": 236,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Central African Rep. Economic call",
+    "dialPlan": "236",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1041",
+    "countryCode": 235,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Chad",
+    "dialPlan": "235",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1299",
+    "countryCode": 235,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Chad Economic call",
+    "dialPlan": "235",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1042",
+    "countryCode": 56,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Chile",
+    "dialPlan": "56",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1300",
+    "countryCode": 56,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Chile Economic call",
+    "dialPlan": "56",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1043",
+    "countryCode": 86,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "China",
+    "dialPlan": "86",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1301",
+    "countryCode": 86,
+    "standardRate": 0.04,
+    "reducedRate": 0.04,
+    "description": "China Economic call",
+    "dialPlan": "86",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1044",
+    "countryCode": 57,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Columbia",
+    "dialPlan": "57",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1302",
+    "countryCode": 57,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Columbia Economic call",
+    "dialPlan": "57",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1045",
+    "countryCode": 269,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Comoros Island",
+    "dialPlan": "269",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1303",
+    "countryCode": 269,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Comoros Island Economic call",
+    "dialPlan": "269",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1046",
+    "countryCode": 242,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Congo Rep.",
+    "dialPlan": "242",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1304",
+    "countryCode": 242,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Congo Rep. Economic call",
+    "dialPlan": "242",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1047",
+    "countryCode": 682,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Cook Island",
+    "dialPlan": "682",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1305",
+    "countryCode": 682,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Cook Island Economic call",
+    "dialPlan": "682",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1048",
+    "countryCode": 506,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Costa Rica",
+    "dialPlan": "506",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1306",
+    "countryCode": 506,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Costa Rica Economic call",
+    "dialPlan": "506",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1049",
+    "countryCode": 385,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Croatia",
+    "dialPlan": "385",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1307",
+    "countryCode": 385,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Croatia Economic call",
+    "dialPlan": "385",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1050",
+    "countryCode": 53,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Cuba",
+    "dialPlan": "53",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1308",
+    "countryCode": 53,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Cuba Economic call",
+    "dialPlan": "53",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1051",
+    "countryCode": 357,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Cyprus",
+    "dialPlan": "357",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1309",
+    "countryCode": 357,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Cyprus Economic call",
+    "dialPlan": "357",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1052",
+    "countryCode": 420,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Czech Republic",
+    "dialPlan": "420",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1310",
+    "countryCode": 420,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Czech Republic Economic call",
+    "dialPlan": "420",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1053",
+    "countryCode": 45,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Denmark",
+    "dialPlan": "45",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1311",
+    "countryCode": 45,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Denmark Economic call",
+    "dialPlan": "45",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1054",
+    "countryCode": 246,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Diego Garcia",
+    "dialPlan": "246",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1312",
+    "countryCode": 246,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Diego Garcia Economic call",
+    "dialPlan": "246",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1055",
+    "countryCode": 253,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Djibouti",
+    "dialPlan": "253",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1313",
+    "countryCode": 253,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Djibouti Economic call",
+    "dialPlan": "253",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1056",
+    "countryCode": 1767,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Dominica",
+    "dialPlan": "1767",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1314",
+    "countryCode": 1767,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Dominica Economic call",
+    "dialPlan": "1767",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1057",
+    "countryCode": 18095,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Dominican Republic",
+    "dialPlan": "18095",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1315",
+    "countryCode": 18095,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Dominican Republic Economic call",
+    "dialPlan": "18095",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1058",
+    "countryCode": 670,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "East Timor",
+    "dialPlan": "670",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1316",
+    "countryCode": 670,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "East Timor Economic call",
+    "dialPlan": "670",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1059",
+    "countryCode": 593,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Ecuador",
+    "dialPlan": "593",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1317",
+    "countryCode": 593,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ecuador Economic call",
+    "dialPlan": "593",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1060",
+    "countryCode": 20,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Egypt",
+    "dialPlan": "20",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1318",
+    "countryCode": 20,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Egypt Economic call",
+    "dialPlan": "20",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1061",
+    "countryCode": 503,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "El Salvador",
+    "dialPlan": "503",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1319",
+    "countryCode": 503,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "El Salvador Economic call",
+    "dialPlan": "503",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1062",
+    "countryCode": 240,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Equatorial Guinea",
+    "dialPlan": "240",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1320",
+    "countryCode": 240,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Equatorial Guinea Economic call",
+    "dialPlan": "240",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1063",
+    "countryCode": 291,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Eritrea",
+    "dialPlan": "291",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1321",
+    "countryCode": 291,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Eritrea Economic call",
+    "dialPlan": "291",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1064",
+    "countryCode": 372,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Estonia",
+    "dialPlan": "372",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1322",
+    "countryCode": 372,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Estonia Economic call",
+    "dialPlan": "372",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1065",
+    "countryCode": 251,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Ethiopia",
+    "dialPlan": "251",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1323",
+    "countryCode": 251,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ethiopia Economic call",
+    "dialPlan": "251",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1066",
+    "countryCode": 500,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Falkland Island",
+    "dialPlan": "500",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1324",
+    "countryCode": 500,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Falkland Island Economic call",
+    "dialPlan": "500",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1067",
+    "countryCode": 298,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Faroe Island",
+    "dialPlan": "298",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1325",
+    "countryCode": 298,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Faroe Island Economic call",
+    "dialPlan": "298",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1068",
+    "countryCode": 679,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Fiji Island",
+    "dialPlan": "679",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1326",
+    "countryCode": 679,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Fiji Island Economic call",
+    "dialPlan": "679",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1069",
+    "countryCode": 358,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Finland",
+    "dialPlan": "358",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1327",
+    "countryCode": 358,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Finland Economic call",
+    "dialPlan": "358",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1070",
+    "countryCode": 33,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "France",
+    "dialPlan": "33",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1328",
+    "countryCode": 33,
+    "standardRate": 0.03,
+    "reducedRate": 0.03,
+    "description": "France Economic call",
+    "dialPlan": "33",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1071",
+    "countryCode": 596,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "French Antilles",
+    "dialPlan": "596",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1072",
+    "countryCode": 594,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "French Guiana",
+    "dialPlan": "594",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1329",
+    "countryCode": 594,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "French Guiana Economic call",
+    "dialPlan": "594",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1331",
+    "countryCode": 337,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "French Mobile Economic call",
+    "dialPlan": "337",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1330",
+    "countryCode": 336,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "French Mobile Economic call",
+    "dialPlan": "336",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1332",
+    "countryCode": 689,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "French Polynesia Economic call",
+    "dialPlan": "689",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1073",
+    "countryCode": 689,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "French Polynesia (Tahiti)",
+    "dialPlan": "689",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1074",
+    "countryCode": 241,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Gabon",
+    "dialPlan": "241",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1333",
+    "countryCode": 241,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Gabon Economic call",
+    "dialPlan": "241",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1075",
+    "countryCode": 220,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Gambia",
+    "dialPlan": "220",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1334",
+    "countryCode": 220,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Gambia Economic call",
+    "dialPlan": "220",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1076",
+    "countryCode": 995,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Georgia",
+    "dialPlan": "995",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1335",
+    "countryCode": 995,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Georgia Economic call",
+    "dialPlan": "995",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1077",
+    "countryCode": 49,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Germany",
+    "dialPlan": "49",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1336",
+    "countryCode": 49,
+    "standardRate": 0.03,
+    "reducedRate": 0.03,
+    "description": "Germany Economic call",
+    "dialPlan": "49",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1337",
+    "countryCode": 49,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Germany Mobile Economic call",
+    "dialPlan": "4915",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1338",
+    "countryCode": 49,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Germany Mobile Economic call",
+    "dialPlan": "4916",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1339",
+    "countryCode": 49,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Germany Mobile Economic call",
+    "dialPlan": "4917",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1078",
+    "countryCode": 233,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Ghana",
+    "dialPlan": "233",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1340",
+    "countryCode": 233,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ghana Economic call",
+    "dialPlan": "233",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1079",
+    "countryCode": 350,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Gibraltar",
+    "dialPlan": "350",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1341",
+    "countryCode": 350,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Gibraltar Economic call",
+    "dialPlan": "350",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1080",
+    "countryCode": 30,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Greece",
+    "dialPlan": "30",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1342",
+    "countryCode": 30,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Greece Economic call",
+    "dialPlan": "30",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1081",
+    "countryCode": 299,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Greenland",
+    "dialPlan": "299",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1343",
+    "countryCode": 299,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Greenland Economic call",
+    "dialPlan": "299",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1082",
+    "countryCode": 1473,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Grenada",
+    "dialPlan": "1473",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1344",
+    "countryCode": 1473,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Grenada Economic call",
+    "dialPlan": "1473",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1083",
+    "countryCode": 590,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Guadeloupe",
+    "dialPlan": "590",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1345",
+    "countryCode": 590,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Guadeloupe Economic call",
+    "dialPlan": "590",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1084",
+    "countryCode": 1671,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Guam",
+    "dialPlan": "1671",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1346",
+    "countryCode": 1671,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Guam Economic call",
+    "dialPlan": "1671",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1085",
+    "countryCode": 502,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Guatemala",
+    "dialPlan": "502",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1347",
+    "countryCode": 502,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Guatemala Economic call",
+    "dialPlan": "502",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1087",
+    "countryCode": 245,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Guinea – Bissau",
+    "dialPlan": "245",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1349",
+    "countryCode": 245,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Guinea – Bissau Economic call",
+    "dialPlan": "245",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1086",
+    "countryCode": 224,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Guinea Republic",
+    "dialPlan": "224",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1348",
+    "countryCode": 224,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Guinea Republic Economic call",
+    "dialPlan": "224",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1088",
+    "countryCode": 592,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Guyana",
+    "dialPlan": "592",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1350",
+    "countryCode": 592,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Guyana Economic call",
+    "dialPlan": "592",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1089",
+    "countryCode": 509,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Haiti",
+    "dialPlan": "509",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1351",
+    "countryCode": 509,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "Haiti Economic call",
+    "dialPlan": "509",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1090",
+    "countryCode": 1808,
+    "standardRate": 0.15,
+    "reducedRate": 0.13,
+    "description": "Hawaii",
+    "dialPlan": "1808",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1352",
+    "countryCode": 1808,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "Hawaii Economic call",
+    "dialPlan": "1808",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1091",
+    "countryCode": 504,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Honduras",
+    "dialPlan": "504",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1353",
+    "countryCode": 504,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Honduras Economic call",
+    "dialPlan": "504",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1092",
+    "countryCode": 852,
+    "standardRate": 0.13,
+    "reducedRate": 0.1,
+    "description": "Hong Kong",
+    "dialPlan": "852",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1354",
+    "countryCode": 852,
+    "standardRate": 0.04,
+    "reducedRate": 0.04,
+    "description": "Hong Kong Economic call",
+    "dialPlan": "852",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1093",
+    "countryCode": 36,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Hungary",
+    "dialPlan": "36",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1355",
+    "countryCode": 36,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Hungary Economic call",
+    "dialPlan": "36",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1094",
+    "countryCode": 354,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Iceland",
+    "dialPlan": "354",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1356",
+    "countryCode": 354,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Iceland Economic call",
+    "dialPlan": "354",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1095",
+    "countryCode": 91,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "India",
+    "dialPlan": "91",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1357",
+    "countryCode": 91,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "India Economic call",
+    "dialPlan": "91",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1543",
+    "countryCode": 91,
+    "standardRate": 0.025,
+    "reducedRate": 0.025,
+    "description": "India SuperEconomic call",
+    "dialPlan": "91",
+    "chargingBlockId": "2",
+    "accessCode": "99"
+  },
+  {
+    "rateId": "1096",
+    "countryCode": 62,
+    "standardRate": 0.15,
+    "reducedRate": 0.13,
+    "description": "Indonesia",
+    "dialPlan": "62",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1358",
+    "countryCode": 62,
+    "standardRate": 0.04,
+    "reducedRate": 0.04,
+    "description": "Indonesia Economic call",
+    "dialPlan": "62",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1097",
+    "countryCode": 87,
+    "standardRate": 0.7,
+    "reducedRate": 0.7,
+    "description": "Inmarsat",
+    "dialPlan": "87",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1098",
+    "countryCode": 98,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Iran",
+    "dialPlan": "98",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1359",
+    "countryCode": 98,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Iran Economic call",
+    "dialPlan": "98",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1099",
+    "countryCode": 964,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Iraq",
+    "dialPlan": "964",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1360",
+    "countryCode": 964,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Iraq Economic call",
+    "dialPlan": "964",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1100",
+    "countryCode": 353,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Ireland",
+    "dialPlan": "353",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1361",
+    "countryCode": 353,
+    "standardRate": 0.03,
+    "reducedRate": 0.03,
+    "description": "Ireland Economic call",
+    "dialPlan": "353",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1368",
+    "countryCode": 353,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ireland Mobile Economic call",
+    "dialPlan": "35389",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1362",
+    "countryCode": 353,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ireland Mobile Economic call",
+    "dialPlan": "35383",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1363",
+    "countryCode": 353,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ireland Mobile Economic call",
+    "dialPlan": "35384",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1365",
+    "countryCode": 353,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ireland Mobile Economic call",
+    "dialPlan": "35386",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1366",
+    "countryCode": 353,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ireland Mobile Economic call",
+    "dialPlan": "35387",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1367",
+    "countryCode": 353,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ireland Mobile Economic call",
+    "dialPlan": "35388",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1364",
+    "countryCode": 353,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ireland Mobile Economic call",
+    "dialPlan": "35385",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1101",
+    "countryCode": 972,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Israel",
+    "dialPlan": "972",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1369",
+    "countryCode": 972,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Israel Economic call",
+    "dialPlan": "972",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1102",
+    "countryCode": 39,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Italy",
+    "dialPlan": "39",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1370",
+    "countryCode": 39,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Italy Economic call",
+    "dialPlan": "39",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1103",
+    "countryCode": 225,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Ivory Coast (Cote D'Ivoire)",
+    "dialPlan": "225",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1371",
+    "countryCode": 225,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ivory Coast Economic call",
+    "dialPlan": "225",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1104",
+    "countryCode": 1876,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Jamaica",
+    "dialPlan": "1876",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1372",
+    "countryCode": 1876,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Jamaica Economic call",
+    "dialPlan": "1876",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1105",
+    "countryCode": 81,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Japan",
+    "dialPlan": "81",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1373",
+    "countryCode": 81,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Japan Economic call",
+    "dialPlan": "81",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1106",
+    "countryCode": 962,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Jordan",
+    "dialPlan": "962",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1374",
+    "countryCode": 962,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Jordan Economic call",
+    "dialPlan": "962",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1107",
+    "countryCode": 704,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Kazakhstan",
+    "dialPlan": "704",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1375",
+    "countryCode": 704,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Kazakhstan Economic call",
+    "dialPlan": "704",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1108",
+    "countryCode": 254,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Kenya",
+    "dialPlan": "254",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1376",
+    "countryCode": 254,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Kenya Economic call",
+    "dialPlan": "254",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1109",
+    "countryCode": 686,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Kiribati",
+    "dialPlan": "686",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1377",
+    "countryCode": 686,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Kiribati Economic call",
+    "dialPlan": "686",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1110",
+    "countryCode": 850,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Korea (North)",
+    "dialPlan": "850",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1378",
+    "countryCode": 850,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Korea (North) Economic call",
+    "dialPlan": "850",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1111",
+    "countryCode": 82,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Korea (South)",
+    "dialPlan": "82",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1379",
+    "countryCode": 82,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "Korea (South) Economic call",
+    "dialPlan": "82",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1112",
+    "countryCode": 965,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Kuwait",
+    "dialPlan": "965",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1380",
+    "countryCode": 965,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Kuwait Economic call",
+    "dialPlan": "965",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1113",
+    "countryCode": 996,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Kyrgyzstan",
+    "dialPlan": "996",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1381",
+    "countryCode": 996,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Kyrgyzstan Economic call",
+    "dialPlan": "996",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1114",
+    "countryCode": 856,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Laos",
+    "dialPlan": "856",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1382",
+    "countryCode": 856,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Laos Economic call",
+    "dialPlan": "856",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1115",
+    "countryCode": 371,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Latvia",
+    "dialPlan": "371",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1383",
+    "countryCode": 371,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Latvia Economic call",
+    "dialPlan": "371",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1116",
+    "countryCode": 961,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Lebanon",
+    "dialPlan": "961",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1384",
+    "countryCode": 961,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Lebanon Economic call",
+    "dialPlan": "961",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1117",
+    "countryCode": 266,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Lesotho",
+    "dialPlan": "266",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1385",
+    "countryCode": 266,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Lesotho Economic call",
+    "dialPlan": "266",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1118",
+    "countryCode": 231,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Liberia",
+    "dialPlan": "231",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1386",
+    "countryCode": 231,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Liberia Economic call",
+    "dialPlan": "231",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1119",
+    "countryCode": 218,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Libya",
+    "dialPlan": "218",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1387",
+    "countryCode": 218,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Libya Economic call",
+    "dialPlan": "218",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1120",
+    "countryCode": 423,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Liechtenstein",
+    "dialPlan": "423",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1388",
+    "countryCode": 423,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Liechtenstein Economic call",
+    "dialPlan": "423",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1121",
+    "countryCode": 370,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Lithuania",
+    "dialPlan": "370",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1389",
+    "countryCode": 370,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Lithuania Economic call",
+    "dialPlan": "370",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1122",
+    "countryCode": 352,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Luxembourg",
+    "dialPlan": "352",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1390",
+    "countryCode": 352,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Luxembourg Economic call",
+    "dialPlan": "352",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1123",
+    "countryCode": 853,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Macau",
+    "dialPlan": "853",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1391",
+    "countryCode": 853,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Macau Economic call",
+    "dialPlan": "853",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1124",
+    "countryCode": 389,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Macedonia",
+    "dialPlan": "389",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1392",
+    "countryCode": 389,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Macedonia Economic call",
+    "dialPlan": "389",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1125",
+    "countryCode": 261,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Madagascar",
+    "dialPlan": "261",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1393",
+    "countryCode": 261,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Madagascar Economic call",
+    "dialPlan": "261",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1126",
+    "countryCode": 35191,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Madeira (Portugal)",
+    "dialPlan": "35191",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1127",
+    "countryCode": 265,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Malawi",
+    "dialPlan": "265",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1394",
+    "countryCode": 265,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Malawi Economic call",
+    "dialPlan": "265",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1395",
+    "countryCode": 60,
+    "standardRate": 0.03,
+    "reducedRate": 0.03,
+    "description": "Malaysia Mobile Economic call",
+    "dialPlan": "601",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1128",
+    "countryCode": 60,
+    "standardRate": 0.13,
+    "reducedRate": 0.1,
+    "description": "Malaysia West",
+    "dialPlan": "60",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1396",
+    "countryCode": 60,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "Malaysia West Economic call",
+    "dialPlan": "60",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1129",
+    "countryCode": 960,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Maldives Republic",
+    "dialPlan": "960",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1397",
+    "countryCode": 960,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Maldives Republic Economic call",
+    "dialPlan": "960",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1130",
+    "countryCode": 223,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Mali",
+    "dialPlan": "223",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1398",
+    "countryCode": 223,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Mali Economic call",
+    "dialPlan": "223",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1131",
+    "countryCode": 356,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Malta",
+    "dialPlan": "356",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1399",
+    "countryCode": 356,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Malta Economic call",
+    "dialPlan": "356",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1400",
+    "countryCode": 1670,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Mariana Island Economic call",
+    "dialPlan": "1670",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1132",
+    "countryCode": 1670,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Mariana Island (Saipan)",
+    "dialPlan": "1670",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1133",
+    "countryCode": 692,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Marshall Islands",
+    "dialPlan": "692",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1401",
+    "countryCode": 692,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Marshall Islands Economic call",
+    "dialPlan": "692",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1134",
+    "countryCode": 596,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Martinique (Fr. Antillies)",
+    "dialPlan": "596",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1402",
+    "countryCode": 596,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Martinique (Fr. Antillies) Economic call",
+    "dialPlan": "596",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1135",
+    "countryCode": 222,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Mauritania",
+    "dialPlan": "222",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1403",
+    "countryCode": 222,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Mauritania Economic call",
+    "dialPlan": "222",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1136",
+    "countryCode": 230,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Mauritius",
+    "dialPlan": "230",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1404",
+    "countryCode": 230,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Mauritius Economic call",
+    "dialPlan": "230",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1137",
+    "countryCode": 52,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Mexico",
+    "dialPlan": "52",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1405",
+    "countryCode": 52,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Mexico Economic call",
+    "dialPlan": "52",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1138",
+    "countryCode": 691,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Micronesia",
+    "dialPlan": "691",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1406",
+    "countryCode": 691,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Micronesia Economic call",
+    "dialPlan": "691",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1139",
+    "countryCode": 1330,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Midway Island",
+    "dialPlan": "1330",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1140",
+    "countryCode": 373,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Moldova",
+    "dialPlan": "373",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1407",
+    "countryCode": 373,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Moldova Economic call",
+    "dialPlan": "373",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1141",
+    "countryCode": 377,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Monaco",
+    "dialPlan": "377",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1408",
+    "countryCode": 377,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Monaco Economic call",
+    "dialPlan": "377",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1142",
+    "countryCode": 976,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Mongolian Republic",
+    "dialPlan": "976",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1409",
+    "countryCode": 976,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Mongolian Republic Economic call",
+    "dialPlan": "976",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1143",
+    "countryCode": 381,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Montenegro",
+    "dialPlan": "381",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1144",
+    "countryCode": 1664,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Montserrat",
+    "dialPlan": "1664",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1410",
+    "countryCode": 1664,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Montserrat Economic call",
+    "dialPlan": "1664",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1145",
+    "countryCode": 212,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Morocco",
+    "dialPlan": "212",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1411",
+    "countryCode": 212,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Morocco Economic call",
+    "dialPlan": "212",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1146",
+    "countryCode": 258,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Mozambique",
+    "dialPlan": "258",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1412",
+    "countryCode": 258,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Mozambique Economic call",
+    "dialPlan": "258",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1148",
+    "countryCode": 6085,
+    "standardRate": 0.05,
+    "reducedRate": 0.04,
+    "description": "M’sia E-Batu Niah",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1414",
+    "countryCode": 6085,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Batu Niah Economic call",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1149",
+    "countryCode": 6086,
+    "standardRate": 0.06,
+    "reducedRate": 0.05,
+    "description": "M’sia E-Bintulu",
+    "dialPlan": "6086",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1415",
+    "countryCode": 6086,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Bintulu Economic call",
+    "dialPlan": "6086",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1150",
+    "countryCode": 6084,
+    "standardRate": 0.06,
+    "reducedRate": 0.05,
+    "description": "M’sia E-Kapit",
+    "dialPlan": "6084",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1416",
+    "countryCode": 6084,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Kapit Economic call",
+    "dialPlan": "6084",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1151",
+    "countryCode": 6088,
+    "standardRate": 0.06,
+    "reducedRate": 0.05,
+    "description": "M’sia E-Kota Kinabalu",
+    "dialPlan": "6088",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1417",
+    "countryCode": 6088,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Kota Kinabalu Economic call",
+    "dialPlan": "6088",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1152",
+    "countryCode": 6085,
+    "standardRate": 0.05,
+    "reducedRate": 0.04,
+    "description": "M’sia E-Kuala Baram",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1418",
+    "countryCode": 6085,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Kuala Baram Economic call",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1153",
+    "countryCode": 6082,
+    "standardRate": 0.06,
+    "reducedRate": 0.05,
+    "description": "M’sia E-Kuching",
+    "dialPlan": "6082",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1419",
+    "countryCode": 6082,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Kuching Economic call",
+    "dialPlan": "6082",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1154",
+    "countryCode": 6087,
+    "standardRate": 0.05,
+    "reducedRate": 0.04,
+    "description": "M’sia E-Labuan",
+    "dialPlan": "6087",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1420",
+    "countryCode": 6087,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Labuan Economic call",
+    "dialPlan": "6087",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1155",
+    "countryCode": 6085,
+    "standardRate": 0.05,
+    "reducedRate": 0.04,
+    "description": "M’sia E-Lawas",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1421",
+    "countryCode": 6085,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Lawas Economic call",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1156",
+    "countryCode": 6085,
+    "standardRate": 0.05,
+    "reducedRate": 0.04,
+    "description": "M’sia E-Limbang",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1422",
+    "countryCode": 6085,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Limbang Economic call",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1157",
+    "countryCode": 6085,
+    "standardRate": 0.05,
+    "reducedRate": 0.04,
+    "description": "M’sia E-Lutong",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1423",
+    "countryCode": 6085,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Lutong Economic call",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1158",
+    "countryCode": 6085,
+    "standardRate": 0.05,
+    "reducedRate": 0.04,
+    "description": "M’sia E-Marudi",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1424",
+    "countryCode": 6085,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Marudi Economic call",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1159",
+    "countryCode": 6085,
+    "standardRate": 0.05,
+    "reducedRate": 0.04,
+    "description": "M’sia E-Miri",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1425",
+    "countryCode": 6085,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Miri Economic call",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1160",
+    "countryCode": 6089,
+    "standardRate": 0.06,
+    "reducedRate": 0.05,
+    "description": "M’sia E-Sandakan",
+    "dialPlan": "6089",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1426",
+    "countryCode": 6089,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Sandakan Economic call",
+    "dialPlan": "6089",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1161",
+    "countryCode": 6084,
+    "standardRate": 0.06,
+    "reducedRate": 0.05,
+    "description": "M’sia E-Sibu",
+    "dialPlan": "6084",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1427",
+    "countryCode": 6084,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Sibu Economic call",
+    "dialPlan": "6084",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1162",
+    "countryCode": 6083,
+    "standardRate": 0.06,
+    "reducedRate": 0.05,
+    "description": "M’sia E-Sri Aman",
+    "dialPlan": "6083",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1428",
+    "countryCode": 6083,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Sri Aman Economic call",
+    "dialPlan": "6083",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1163",
+    "countryCode": 6080,
+    "standardRate": 0.05,
+    "reducedRate": 0.04,
+    "description": "M’sia E-Sundar",
+    "dialPlan": "6080",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1429",
+    "countryCode": 6080,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Sundar Economic call",
+    "dialPlan": "6080",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1164",
+    "countryCode": 6089,
+    "standardRate": 0.06,
+    "reducedRate": 0.05,
+    "description": "M’sia E-Tawau",
+    "dialPlan": "6089",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1430",
+    "countryCode": 6089,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Tawau Economic call",
+    "dialPlan": "6089",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1147",
+    "countryCode": 95,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Myanmar (Burma)",
+    "dialPlan": "95",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1413",
+    "countryCode": 95,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Myanmar (Burma) Economic call",
+    "dialPlan": "95",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1165",
+    "countryCode": 264,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Namibia",
+    "dialPlan": "264",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1431",
+    "countryCode": 264,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Namibia Economic call",
+    "dialPlan": "264",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1166",
+    "countryCode": 674,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Nauru",
+    "dialPlan": "674",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1432",
+    "countryCode": 674,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Nauru Economic call",
+    "dialPlan": "674",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1167",
+    "countryCode": 977,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Nepal",
+    "dialPlan": "977",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1433",
+    "countryCode": 977,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "Nepal Economic call",
+    "dialPlan": "977",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1544",
+    "countryCode": 977,
+    "standardRate": 0.025,
+    "reducedRate": 0.025,
+    "description": "Nepal SuperEconomic call",
+    "dialPlan": "977",
+    "chargingBlockId": "2",
+    "accessCode": "99"
+  },
+  {
+    "rateId": "1168",
+    "countryCode": 31,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Netherlands",
+    "dialPlan": "31",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1169",
+    "countryCode": 599,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Netherlands Antillies",
+    "dialPlan": "599",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1435",
+    "countryCode": 599,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Netherlands Antillies Economic call",
+    "dialPlan": "599",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1434",
+    "countryCode": 31,
+    "standardRate": 0.03,
+    "reducedRate": 0.03,
+    "description": "Netherlands Economic call",
+    "dialPlan": "31",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1440",
+    "countryCode": 31,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Netherlands Mobile Economic call",
+    "dialPlan": "3165",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1441",
+    "countryCode": 31,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Netherlands Mobile Economic call",
+    "dialPlan": "3166",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1442",
+    "countryCode": 31,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Netherlands Mobile Economic call",
+    "dialPlan": "3167",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1443",
+    "countryCode": 31,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Netherlands Mobile Economic call",
+    "dialPlan": "3168",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1436",
+    "countryCode": 31,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Netherlands Mobile Economic call",
+    "dialPlan": "3161",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1437",
+    "countryCode": 31,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Netherlands Mobile Economic call",
+    "dialPlan": "3162",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1439",
+    "countryCode": 31,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Netherlands Mobile Economic call",
+    "dialPlan": "3164",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1438",
+    "countryCode": 31,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Netherlands Mobile Economic call",
+    "dialPlan": "3163",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1170",
+    "countryCode": 687,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "New Caledonia",
+    "dialPlan": "687",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1444",
+    "countryCode": 687,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "New Caledonia Economic call",
+    "dialPlan": "687",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1171",
+    "countryCode": 64,
+    "standardRate": 0.15,
+    "reducedRate": 0.13,
+    "description": "New Zealand",
+    "dialPlan": "64",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1445",
+    "countryCode": 64,
+    "standardRate": 0.03,
+    "reducedRate": 0.03,
+    "description": "New Zealand Economic call",
+    "dialPlan": "64",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1446",
+    "countryCode": 64,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "New Zealand Mobile Economic call",
+    "dialPlan": "6421",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1448",
+    "countryCode": 64,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "New Zealand Mobile Economic call",
+    "dialPlan": "6427",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1447",
+    "countryCode": 64,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "New Zealand Mobile Economic call",
+    "dialPlan": "6422",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1450",
+    "countryCode": 64,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "New Zealand Mobile Economic call",
+    "dialPlan": "6429",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1449",
+    "countryCode": 64,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "New Zealand Mobile Economic call",
+    "dialPlan": "6428",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1172",
+    "countryCode": 505,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Nicaragua",
+    "dialPlan": "505",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1451",
+    "countryCode": 505,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Nicaragua Economic call",
+    "dialPlan": "505",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1173",
+    "countryCode": 227,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Niger",
+    "dialPlan": "227",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1452",
+    "countryCode": 227,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Niger Economic call",
+    "dialPlan": "227",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1174",
+    "countryCode": 234,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Nigeria",
+    "dialPlan": "234",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1453",
+    "countryCode": 234,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Nigeria Economic call",
+    "dialPlan": "234",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1175",
+    "countryCode": 683,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Niue Island",
+    "dialPlan": "683",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1454",
+    "countryCode": 683,
+    "standardRate": 0,
+    "reducedRate": 0,
+    "description": "Niue Island Economic call",
+    "dialPlan": "683",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1176",
+    "countryCode": 6723,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Norfolk Island",
+    "dialPlan": "6723",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1455",
+    "countryCode": 6723,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Norfolk Island Economic call",
+    "dialPlan": "6723",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1177",
+    "countryCode": 47,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Norway",
+    "dialPlan": "47",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1456",
+    "countryCode": 47,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Norway Economic call",
+    "dialPlan": "47",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1178",
+    "countryCode": 968,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Oman",
+    "dialPlan": "968",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1457",
+    "countryCode": 968,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Oman Economic call",
+    "dialPlan": "968",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1179",
+    "countryCode": 92,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Pakistan",
+    "dialPlan": "92",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1458",
+    "countryCode": 92,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "Pakistan Economic call",
+    "dialPlan": "92",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1545",
+    "countryCode": 92,
+    "standardRate": 0.025,
+    "reducedRate": 0.025,
+    "description": "Pakistan SuperEconomic call",
+    "dialPlan": "92",
+    "chargingBlockId": "2",
+    "accessCode": "99"
+  },
+  {
+    "rateId": "1180",
+    "countryCode": 680,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Palau",
+    "dialPlan": "680",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1459",
+    "countryCode": 680,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Palau Economic call",
+    "dialPlan": "680",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1181",
+    "countryCode": 970,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Palestine",
+    "dialPlan": "970",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1460",
+    "countryCode": 970,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Palestine Economic call",
+    "dialPlan": "970",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1182",
+    "countryCode": 507,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Panama",
+    "dialPlan": "507",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1461",
+    "countryCode": 507,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Panama Economic call",
+    "dialPlan": "507",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1183",
+    "countryCode": 675,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Papua New Guinea",
+    "dialPlan": "675",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1462",
+    "countryCode": 675,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Papua New Guinea Economic call",
+    "dialPlan": "675",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1184",
+    "countryCode": 595,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Paraguay",
+    "dialPlan": "595",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1463",
+    "countryCode": 595,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Paraguay Economic call",
+    "dialPlan": "595",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1185",
+    "countryCode": 51,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Peru",
+    "dialPlan": "51",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1464",
+    "countryCode": 51,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Peru Economic call",
+    "dialPlan": "51",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1186",
+    "countryCode": 63,
+    "standardRate": 0.15,
+    "reducedRate": 0.13,
+    "description": "Philippines",
+    "dialPlan": "63",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1465",
+    "countryCode": 63,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "Philippines Economic call",
+    "dialPlan": "63",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1187",
+    "countryCode": 48,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Poland",
+    "dialPlan": "48",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1466",
+    "countryCode": 48,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Poland Economic call",
+    "dialPlan": "48",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1188",
+    "countryCode": 351,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Portugal",
+    "dialPlan": "351",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1467",
+    "countryCode": 351,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Portugal Economic call",
+    "dialPlan": "351",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1189",
+    "countryCode": 1787,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Puerto Rico",
+    "dialPlan": "1787",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1468",
+    "countryCode": 1787,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Puerto Rico Economic call",
+    "dialPlan": "1787",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1190",
+    "countryCode": 974,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Qatar",
+    "dialPlan": "974",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1469",
+    "countryCode": 974,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Qatar Economic call",
+    "dialPlan": "974",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1191",
+    "countryCode": 262,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Reunion",
+    "dialPlan": "262",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1470",
+    "countryCode": 262,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Reunion Economic call",
+    "dialPlan": "262",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1192",
+    "countryCode": 40,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Romania",
+    "dialPlan": "40",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1471",
+    "countryCode": 40,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Romania Economic call",
+    "dialPlan": "40",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1193",
+    "countryCode": 7,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Russia",
+    "dialPlan": "7",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1472",
+    "countryCode": 7,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Russia Economic call",
+    "dialPlan": "7",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1194",
+    "countryCode": 250,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Rwanda",
+    "dialPlan": "250",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1473",
+    "countryCode": 250,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Rwanda Economic call",
+    "dialPlan": "250",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1474",
+    "countryCode": 1670,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Saipan Economic call",
+    "dialPlan": "1670",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1195",
+    "countryCode": 684,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Samoa (America)",
+    "dialPlan": "684",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1475",
+    "countryCode": 684,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Samoa (America) Economic call",
+    "dialPlan": "684",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1196",
+    "countryCode": 685,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Samoa (Western)",
+    "dialPlan": "685",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1476",
+    "countryCode": 685,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Samoa (Western) Economic call",
+    "dialPlan": "685",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1197",
+    "countryCode": 378,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "San Marino",
+    "dialPlan": "378",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1477",
+    "countryCode": 378,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "San Marino Economic call",
+    "dialPlan": "378",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1198",
+    "countryCode": 239,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Sao Tome & Principe",
+    "dialPlan": "239",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1478",
+    "countryCode": 239,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Sao Tome & Principe Economic call",
+    "dialPlan": "239",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1199",
+    "countryCode": 966,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Saudi Arabia",
+    "dialPlan": "966",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1479",
+    "countryCode": 966,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "Saudi Arabia Economic call",
+    "dialPlan": "966",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1200",
+    "countryCode": 221,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Senegal",
+    "dialPlan": "221",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1480",
+    "countryCode": 221,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Senegal Economic call",
+    "dialPlan": "221",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1201",
+    "countryCode": 381,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Serbia (as Yugoslavia)",
+    "dialPlan": "381",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1481",
+    "countryCode": 381,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Serbia (as Yugoslavia) Economic call",
+    "dialPlan": "381",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1202",
+    "countryCode": 248,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Seychelles",
+    "dialPlan": "248",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1482",
+    "countryCode": 248,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Seychelles Economic call",
+    "dialPlan": "248",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1203",
+    "countryCode": 232,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Sierra Leone",
+    "dialPlan": "232",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1483",
+    "countryCode": 232,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Sierra Leone Economic call",
+    "dialPlan": "232",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1204",
+    "countryCode": 65,
+    "standardRate": 0.13,
+    "reducedRate": 0.1,
+    "description": "Singapore",
+    "dialPlan": "65",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1484",
+    "countryCode": 65,
+    "standardRate": 0.03,
+    "reducedRate": 0.03,
+    "description": "Singapore Economic call",
+    "dialPlan": "65",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1205",
+    "countryCode": 421,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Slovakia",
+    "dialPlan": "421",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1485",
+    "countryCode": 421,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Slovakia Economic call",
+    "dialPlan": "421",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1206",
+    "countryCode": 386,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Slovenia",
+    "dialPlan": "386",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1486",
+    "countryCode": 386,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Slovenia Economic call",
+    "dialPlan": "386",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1207",
+    "countryCode": 677,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Solomon Island",
+    "dialPlan": "677",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1487",
+    "countryCode": 677,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Solomon Island Economic call",
+    "dialPlan": "677",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1208",
+    "countryCode": 252,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Somalia",
+    "dialPlan": "252",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1488",
+    "countryCode": 252,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Somalia Economic call",
+    "dialPlan": "252",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1209",
+    "countryCode": 27,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "South Africa",
+    "dialPlan": "27",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1489",
+    "countryCode": 27,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "South Africa Economic call",
+    "dialPlan": "27",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1210",
+    "countryCode": 34,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Spain",
+    "dialPlan": "34",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1490",
+    "countryCode": 34,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Spain Economic call",
+    "dialPlan": "34",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1211",
+    "countryCode": 94,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Sri Lanka",
+    "dialPlan": "94",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1491",
+    "countryCode": 94,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Sri Lanka Economic call",
+    "dialPlan": "94",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1546",
+    "countryCode": 94,
+    "standardRate": 0.035,
+    "reducedRate": 0.035,
+    "description": "Sri Lanka SuperEconomic call",
+    "dialPlan": "94",
+    "chargingBlockId": "2",
+    "accessCode": "99"
+  },
+  {
+    "rateId": "1212",
+    "countryCode": 290,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "St. Helena",
+    "dialPlan": "290",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1492",
+    "countryCode": 290,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "St. Helena Economic call",
+    "dialPlan": "290",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1213",
+    "countryCode": 1869,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "St. Kitts & Nevis",
+    "dialPlan": "1869",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1493",
+    "countryCode": 1869,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "St. Kitts & Nevis Economic call",
+    "dialPlan": "1869",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1214",
+    "countryCode": 1758,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "St. Lucia",
+    "dialPlan": "1758",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1494",
+    "countryCode": 1758,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "St. Lucia Economic call",
+    "dialPlan": "1758",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1215",
+    "countryCode": 508,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "St. Pierre & Mique.",
+    "dialPlan": "508",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1495",
+    "countryCode": 508,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "St. Pierre & Mique. Economic call",
+    "dialPlan": "508",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1216",
+    "countryCode": 1784,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "St. Vincent & Grenadines",
+    "dialPlan": "1784",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1496",
+    "countryCode": 1784,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "St. Vincent & Grenadines Economic call",
+    "dialPlan": "1784",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1217",
+    "countryCode": 249,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Sudan",
+    "dialPlan": "249",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1497",
+    "countryCode": 249,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Sudan Economic call",
+    "dialPlan": "249",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1218",
+    "countryCode": 597,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Suriname",
+    "dialPlan": "597",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1498",
+    "countryCode": 597,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Suriname Economic call",
+    "dialPlan": "597",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1219",
+    "countryCode": 268,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Swaziland",
+    "dialPlan": "268",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1499",
+    "countryCode": 268,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Swaziland Economic call",
+    "dialPlan": "268",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1220",
+    "countryCode": 46,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Sweden",
+    "dialPlan": "46",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1500",
+    "countryCode": 46,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Sweden Economic call",
+    "dialPlan": "46",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1221",
+    "countryCode": 41,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Switzerland",
+    "dialPlan": "41",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1501",
+    "countryCode": 41,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Switzerland Economic call",
+    "dialPlan": "41",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1222",
+    "countryCode": 963,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Syria",
+    "dialPlan": "963",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1502",
+    "countryCode": 963,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Syria Economic call",
+    "dialPlan": "963",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1223",
+    "countryCode": 886,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Taiwan",
+    "dialPlan": "886",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1503",
+    "countryCode": 886,
+    "standardRate": 0.04,
+    "reducedRate": 0.04,
+    "description": "Taiwan Economic call",
+    "dialPlan": "886",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1224",
+    "countryCode": 992,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Tajikistan",
+    "dialPlan": "992",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1504",
+    "countryCode": 992,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Tajikistan Economic call",
+    "dialPlan": "992",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1225",
+    "countryCode": 255,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Tanzania",
+    "dialPlan": "255",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1505",
+    "countryCode": 255,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Tanzania Economic call",
+    "dialPlan": "255",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1226",
+    "countryCode": 78432,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Tatarstan",
+    "dialPlan": "78432",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1506",
+    "countryCode": 78432,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Tatarstan Economic call",
+    "dialPlan": "78432",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1227",
+    "countryCode": 66,
+    "standardRate": 0.15,
+    "reducedRate": 0.13,
+    "description": "Thailand",
+    "dialPlan": "66",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1507",
+    "countryCode": 66,
+    "standardRate": 0.04,
+    "reducedRate": 0.04,
+    "description": "Thailand Economic call",
+    "dialPlan": "66",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1228",
+    "countryCode": 88216,
+    "standardRate": 0.7,
+    "reducedRate": 0.7,
+    "description": "Thuraya",
+    "dialPlan": "88216",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1229",
+    "countryCode": 228,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Togo",
+    "dialPlan": "228",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1508",
+    "countryCode": 228,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Togo Economic call",
+    "dialPlan": "228",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1230",
+    "countryCode": 690,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Tokelau",
+    "dialPlan": "690",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1231",
+    "countryCode": 676,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Tonga Island",
+    "dialPlan": "676",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1509",
+    "countryCode": 676,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Tonga Island Economic call",
+    "dialPlan": "676",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1232",
+    "countryCode": 1868,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Trinidad & Tobago",
+    "dialPlan": "1868",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1510",
+    "countryCode": 1868,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Trinidad & Tobago Economic call",
+    "dialPlan": "1868",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1233",
+    "countryCode": 216,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Tunisia",
+    "dialPlan": "216",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1511",
+    "countryCode": 216,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Tunisia Economic call",
+    "dialPlan": "216",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1234",
+    "countryCode": 90,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Turkey",
+    "dialPlan": "90",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1512",
+    "countryCode": 90,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Turkey Economic call",
+    "dialPlan": "90",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1235",
+    "countryCode": 993,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Turkmenistan",
+    "dialPlan": "993",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1513",
+    "countryCode": 993,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Turkmenistan Economic call",
+    "dialPlan": "993",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1236",
+    "countryCode": 1649,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Turks & Caicos",
+    "dialPlan": "1649",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1514",
+    "countryCode": 1649,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Turks & Caicos Economic call",
+    "dialPlan": "1649",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1237",
+    "countryCode": 688,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Tuvalu",
+    "dialPlan": "688",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1515",
+    "countryCode": 688,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Tuvalu Economic call",
+    "dialPlan": "688",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1239",
+    "countryCode": 256,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Uganda",
+    "dialPlan": "256",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1517",
+    "countryCode": 256,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Uganda Economic call",
+    "dialPlan": "256",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1240",
+    "countryCode": 380,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Ukraine",
+    "dialPlan": "380",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1518",
+    "countryCode": 380,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Ukraine Economic call",
+    "dialPlan": "380",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1241",
+    "countryCode": 971,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "United Arab Emirates",
+    "dialPlan": "971",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1519",
+    "countryCode": 971,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "United Arab Emirates Economic call",
+    "dialPlan": "971",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1242",
+    "countryCode": 44,
+    "standardRate": 0.15,
+    "reducedRate": 0.13,
+    "description": "United Kingdom",
+    "dialPlan": "44",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1520",
+    "countryCode": 44,
+    "standardRate": 0.03,
+    "reducedRate": 0.03,
+    "description": "United Kingdom Economic call",
+    "dialPlan": "44",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1521",
+    "countryCode": 44,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "United Kingdom Mobile Economic call",
+    "dialPlan": "4471",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1525",
+    "countryCode": 44,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "United Kingdom Mobile Economic call",
+    "dialPlan": "4475",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1526",
+    "countryCode": 44,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "United Kingdom Mobile Economic call",
+    "dialPlan": "4477",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1527",
+    "countryCode": 44,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "United Kingdom Mobile Economic call",
+    "dialPlan": "4478",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1528",
+    "countryCode": 44,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "United Kingdom Mobile Economic call",
+    "dialPlan": "4479",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1523",
+    "countryCode": 44,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "United Kingdom Mobile Economic call",
+    "dialPlan": "4473",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1524",
+    "countryCode": 44,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "United Kingdom Mobile Economic call",
+    "dialPlan": "4474",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1522",
+    "countryCode": 44,
+    "standardRate": 0.05,
+    "reducedRate": 0.05,
+    "description": "United Kingdom Mobile Economic call",
+    "dialPlan": "4472",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1243",
+    "countryCode": 598,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Uruguay",
+    "dialPlan": "598",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1529",
+    "countryCode": 598,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Uruguay Economic call",
+    "dialPlan": "598",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1238",
+    "countryCode": 1,
+    "standardRate": 0.15,
+    "reducedRate": 0.13,
+    "description": "U.S.A",
+    "dialPlan": "1",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1516",
+    "countryCode": 1,
+    "standardRate": 0.04,
+    "reducedRate": 0.04,
+    "description": "U.S.A Economic call",
+    "dialPlan": "1",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1244",
+    "countryCode": 998,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Uzbekistan",
+    "dialPlan": "998",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1530",
+    "countryCode": 998,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Uzbekistan Economic call",
+    "dialPlan": "998",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1245",
+    "countryCode": 678,
+    "standardRate": 0.35,
+    "reducedRate": 0.3,
+    "description": "Vanuatu",
+    "dialPlan": "678",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1531",
+    "countryCode": 678,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Vanuatu Economic call",
+    "dialPlan": "678",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1246",
+    "countryCode": 39,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Vatican City",
+    "dialPlan": "39",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1247",
+    "countryCode": 58,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Venezuela",
+    "dialPlan": "58",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1532",
+    "countryCode": 58,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Venezuela Economic call",
+    "dialPlan": "58",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1248",
+    "countryCode": 84,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Vietnam",
+    "dialPlan": "84",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1533",
+    "countryCode": 84,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Vietnam Economic call",
+    "dialPlan": "84",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1249",
+    "countryCode": 1284,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Virgin Island (UK)",
+    "dialPlan": "1284",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1534",
+    "countryCode": 1284,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Virgin Island (UK) Economic call",
+    "dialPlan": "1284",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1250",
+    "countryCode": 1340,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Virgin Island (USA)",
+    "dialPlan": "1340",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1535",
+    "countryCode": 1340,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Virgin Island (USA) Economic call",
+    "dialPlan": "1340",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1251",
+    "countryCode": 1331,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Wake Island",
+    "dialPlan": "1331",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1252",
+    "countryCode": 681,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Wallis & Futuna",
+    "dialPlan": "681",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1536",
+    "countryCode": 681,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Wallis & Futuna Economic call",
+    "dialPlan": "681",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1253",
+    "countryCode": 967,
+    "standardRate": 0.28,
+    "reducedRate": 0.2,
+    "description": "Yemen",
+    "dialPlan": "967",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1537",
+    "countryCode": 967,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Yemen Economic call",
+    "dialPlan": "967",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1254",
+    "countryCode": 381,
+    "standardRate": 0.2,
+    "reducedRate": 0.15,
+    "description": "Yugoslavia (as Serbia)",
+    "dialPlan": "381",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1538",
+    "countryCode": 381,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Yugoslavia (as Serbia) Economic call",
+    "dialPlan": "381",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1255",
+    "countryCode": 243,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Zaire (as Congo)",
+    "dialPlan": "243",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1539",
+    "countryCode": 243,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Zaire (as Congo) Economic call",
+    "dialPlan": "243",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1256",
+    "countryCode": 260,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Zambia",
+    "dialPlan": "260",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1540",
+    "countryCode": 260,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Zambia Economic call",
+    "dialPlan": "260",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1257",
+    "countryCode": 263,
+    "standardRate": 0.3,
+    "reducedRate": 0.24,
+    "description": "Zimbabwe",
+    "dialPlan": "263",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1541",
+    "countryCode": 263,
+    "standardRate": 0.07,
+    "reducedRate": 0.07,
+    "description": "Zimbabwe Economic call",
+    "dialPlan": "263",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  }
+]
