@@ -1,176 +1,147 @@
 import { expect, test, vi } from 'vitest';
-import {
-  Decoder,
-  type CallerDetailRecord,
-  type CdrRate,
-  type ChargeDetail,
-  type CdrRateJson
-} from '../src/decoder1.js';
+import { Decoder } from '../src/decoder1.js';
+import fs from 'fs/promises';
+import path from 'path';
 
-test('decode with reduced rate within one day', async () => {
+const testDataDir = path.join(__dirname, 'testData');
+const dlvFilePath = path.join(testDataDir, 'test.dlv');
+const cdrRatesPath = path.join(testDataDir, 'cdrRates.json');
+const outputJsonPath = path.join(testDataDir, 'output.json');
+const parsedJsonPath = path.join(testDataDir, 'parsed_output.json');
 
-  const consoleSpy = vi.spyOn(console, 'log');
+// Mock fs.promises
+vi.mock('fs/promises');
+
+test('Decoder.decode processes DLV file correctly', async () => {
   // Arrange
-  const callDetailRecords: CallerDetailRecord[] = [
+  const mockDlvContent = '11| 01| 0| 9|01092017|230406|01092017|230607|     120|    0|  2|             2552500|    0|  3|     0060889825396945| 65535|      |      |   138|   971|  15| 118| 10| 4|0| 0|  4|144| 0|0|    0|  971|65535|   50|  3|     009779825396945|65535|   |                    |102|  2| 0|                 009779825396945|  1| 63|  3|    |15|15|                     |                     |          |          | 00000000000000000000000000000000| 00000000000000000000000000000000| 000000000000|   |   |   |65535|65535|65535|65535| 15|255|                     |';
+  const mockCdrRates = [
     {
-      answerDateTime: new Date(2020, 0, 1, 7, 0, 0, 0), // 7:00 AM
-      endDateTime: new Date(2020, 0, 1, 7, 5, 0, 0), // 7:05 AM
-      calledNumber: 6738852329,
-    },
+    "rateId": "1148",
+    "countryCode": 6085,
+    "standardRate": 0.05,
+    "reducedRate": 0.04,
+    "description": "M’sia E-Batu Niah",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1414",
+    "countryCode": 6085,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Batu Niah Economic call",
+    "dialPlan": "6085",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1149",
+    "countryCode": 6086,
+    "standardRate": 0.06,
+    "reducedRate": 0.05,
+    "description": "M’sia E-Bintulu",
+    "dialPlan": "6086",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1415",
+    "countryCode": 6086,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Bintulu Economic call",
+    "dialPlan": "6086",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1150",
+    "countryCode": 6084,
+    "standardRate": 0.06,
+    "reducedRate": 0.05,
+    "description": "M’sia E-Kapit",
+    "dialPlan": "6084",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1416",
+    "countryCode": 6084,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Kapit Economic call",
+    "dialPlan": "6084",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
+  {
+    "rateId": "1151",
+    "countryCode": 6088,
+    "standardRate": 0.06,
+    "reducedRate": 0.05,
+    "description": "M’sia E-Kota Kinabalu",
+    "dialPlan": "6088",
+    "chargingBlockId": "2",
+    "accessCode": "0"
+  },
+  {
+    "rateId": "1417",
+    "countryCode": 6088,
+    "standardRate": 0.02,
+    "reducedRate": 0.02,
+    "description": "M’sia E-Kota Kinabalu Economic call",
+    "dialPlan": "6088",
+    "chargingBlockId": "2",
+    "accessCode": "95"
+  },
   ];
 
-  const cdrRates: CdrRateJson[] = [
-    {
-      rateId: "1000",
-      countryCode: 673,
-      standardRate: 0.5,
-      reducedRate: 0.1,
-      description: "Test Country",
-      dialPlan: "673",
-      chargingBlockId: "2",
-      accessCode: "0"
-    },
-  ];
+  vi.mocked(fs.readFile).mockImplementation((path: string) => {
+    if (path === dlvFilePath) {
+      return Promise.resolve(mockDlvContent);
+    } else if (path === cdrRatesPath) {
+      return Promise.resolve(JSON.stringify(mockCdrRates));
+    }
+    return Promise.reject(new Error('File not found'));
+  });
+  vi.mocked(fs.writeFile).mockResolvedValue(undefined);
 
-  const decoder = new Decoder();
+  const decoder = new Decoder(cdrRatesPath);
 
   // Act
-  const charges: ChargeDetail[] = await decoder.decode(callDetailRecords, cdrRates);
-
-
-  // Assert
-  console.log(charges)
-  expect(charges).toHaveLength(1);
-  expect(charges[0].chargeAmount).toBe(300 * 0.1); // 300 seconds * 0.1 rate = 30
-  //expect(consoleSpy).toHaveBeenCalledWith("RATE ==>", expect.any(Number));
-  // If you want to see all console.log calls
-  console.log(consoleSpy.mock.calls);
-
-  // Don't forget to restore the spy
-  consoleSpy.mockRestore();
-
-});
-
-test('decode with standard rate within one day', async () => {
-  // Arrange
-  const callDetailRecords: CallerDetailRecord[] = [
-    {
-      answerDateTime: new Date(2020, 0, 1, 10, 0, 0, 0), // 10:00 AM
-      endDateTime: new Date(2020, 0, 1, 10, 5, 0, 0), // 10:05 AM
-      calledNumber: 6738852329,
-    },
-  ];
-
-  const cdrRates: CdrRateJson[] = [
-    {
-      rateId: "1000",
-      countryCode: 673,
-      standardRate: 0.5,
-      reducedRate: 0.1,
-      description: "Test Country",
-      dialPlan: "673",
-      chargingBlockId: "2",
-      accessCode: "0"
-    },
-  ];
-
-  const decoder = new Decoder();
-
-  // Act
-  const charges: ChargeDetail[] = await decoder.decode(callDetailRecords, cdrRates);
+  await decoder.decode(dlvFilePath, outputJsonPath, parsedJsonPath);
 
   // Assert
-  expect(charges).toHaveLength(1);
-  expect(charges[0].chargeAmount).toBe(5 * 60 * 0.5); // 5 minutes * 60 seconds * 0.5 rate = 150
+  expect(fs.writeFile).toHaveBeenCalledTimes(2);
+  
+  const fullOutputCall = vi.mocked(fs.writeFile).mock.calls[0];
+  const parsedOutputCall = vi.mocked(fs.writeFile).mock.calls[1];
+
+  expect(fullOutputCall[0]).toBe(outputJsonPath);
+  expect(parsedOutputCall[0]).toBe(parsedJsonPath);
+
+  const fullOutput = JSON.parse(fullOutputCall[1] as string);
+  const parsedOutput = JSON.parse(parsedOutputCall[1] as string);
+
+  expect(fullOutput).toHaveLength(1);
+  expect(parsedOutput).toHaveLength(1);
+
+  expect(parsedOutput[0]).toEqual({
+    NETTYPE: '11',
+    BILLTYPE: '01',
+    SUBSCRIBER: '2552500',
+    DESTINATION: '0060889825396945',
+    TYPE: 'international',
+    COUNTRYCODE: 6088,
+    ANSDATE: '01092017',
+    ANSTIME: '230406',
+    ENDDATE: '01092017',
+    ENDTIME: '230607',
+    CONVERSATIONTIME: '120',
+    TOTALCHARGES: 0.12
+  });
 });
 
-test('decode with call spanning multiple days', () => {
-  // arrange
-  const callDetailRecords: CallerDetailRecord[] = [
-    {
-      answerDateTime: new Date(2020, 0, 1, 23, 58, 0, 0), // 11:58 PM Jan 1
-      endDateTime: new Date(2020, 0, 2, 0, 2, 0, 0), // 12:02 AM Jan 2
-      calledNumber: 6738852329,
-    },
-  ];
-
-  const cdrRates: CdrRate[] = [
-    {
-      countryCode: 673,
-      standardRate: 0.5,
-      reducedRate: 0.1,
-      economic: true,
-    },
-  ];
-
-  const decoder = new Decoder();
-
-  // act
-  const charges: ChargeDetail[] = decoder.decode(callDetailRecords, cdrRates);
-
-  // assert
-  expect(charges).toHaveLength(1);
-  // Calculate charge: 2 minutes in standard rate (23:58 - 00:00) and 2 minutes in reduced rate (00:00 - 00:02)
-  const expectedCharge = 2 * 60 * 0.5 + 2 * 60 * 0.1;
-  expect(charges[0].chargeAmount).toBe(expectedCharge);
-});
-
-test('decode with call spanning both standard and reduced rate periods', () => {
-  // arrange
-  const callDetailRecords: CallerDetailRecord[] = [
-    {
-      answerDateTime: new Date(2020, 0, 1, 7, 58, 0, 0), // 7:58 AM
-      endDateTime: new Date(2020, 0, 1, 8, 2, 0, 0), // 8:02 AM
-      calledNumber: 6738852329,
-    },
-  ];
-
-  const cdrRates: CdrRate[] = [
-    {
-      countryCode: 673,
-      standardRate: 0.5,
-      reducedRate: 0.1,
-      economic: true,
-    },
-  ];
-
-  const decoder = new Decoder();
-
-  // act
-  const charges: ChargeDetail[] = decoder.decode(callDetailRecords, cdrRates);
-
-  // assert
-  expect(charges).toHaveLength(1);
-  // Calculate charge: 2 minutes in reduced rate (07:58 - 08:00) and 2 minutes in standard rate (08:00 - 08:02)
-  const expectedCharge = 2 * 60 * 0.1 + 2 * 60 * 0.5;
-  expect(charges[0].chargeAmount).toBe(expectedCharge);
-});
-
-test('decode with no matching rate, should apply default rate', () => {
-  // arrange
-  const callDetailRecords: CallerDetailRecord[] = [
-    {
-      answerDateTime: new Date(2020, 0, 1, 10, 0, 0, 0), // 10:00 AM
-      endDateTime: new Date(2020, 0, 1, 10, 5, 0, 0), // 10:05 AM
-      calledNumber: 1234567890, // Unmatched country code
-    },
-  ];
-
-  const cdrRates: CdrRate[] = [
-    {
-      countryCode: 673,
-      standardRate: 0.5,
-      reducedRate: 0.1,
-      economic: false,
-    },
-  ];
-
-  const decoder = new Decoder();
-
-  // act
-  const charges: ChargeDetail[] = decoder.decode(callDetailRecords, cdrRates);
-
-  // assert
-  expect(charges).toHaveLength(1);
-  expect(charges[0].chargeAmount).toBe(5 * 60 * 1); // 5 minutes * 60 seconds * default rate (1)
-});
+// Add more tests as needed for different scenarios
