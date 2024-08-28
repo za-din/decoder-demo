@@ -29,10 +29,10 @@ export type ChargeDetail = {
 };
 
 export class Decoder {
-  async decode(callerDetailRecords: CallerDetailRecord[]): Promise<ChargeDetail[]> {
-    const cdrFilePath = path.join(__dirname, '../cdr.json');
-    const cdrData = await fs.readFile(cdrFilePath, 'utf-8');
-    const cdrRates: CdrRate[] = JSON.parse(cdrData);
+  async decode(callerDetailRecords: CallerDetailRecord[], cdrRates: CdrRate[]): Promise<ChargeDetail[]> {
+    //const cdrFilePath = path.join(__dirname, '../cdr.json');
+    //const cdrData = await fs.readFile(cdrFilePath, 'utf-8');
+    //const cdrRates: CdrRate[] = JSON.parse(cdrData);
 
     return callerDetailRecords.map((record) => {
       const rateDetail = this.getRate(record, cdrRates);
@@ -48,20 +48,14 @@ export class Decoder {
         record.answerDateTime
       );
 
-      let chargeAmount: number;
+      const rate = this.getSingleRate(record, rateDetail);
+     
+    const chargeAmount = conversationTime * rate;
+    console.log("RATE ==>",rate, "conversationTime", conversationTime, "chargeAmount:", chargeAmount)
 
-      if (this.spansMultipleDays(record)) {
-        chargeAmount = this.calculateMultiDayCharge(record, rateDetail);
-      } else if (this.spansStandardAndReducedRates(record, rateDetail)) {
-        chargeAmount = this.calculateSpanRateCharge(record, rateDetail);
-      } else {
-        chargeAmount =
-          conversationTime * this.getSingleRate(record, rateDetail);
-      }
-
-      return {
-        chargeAmount,
-      };
+    return {
+      chargeAmount,
+    };
     });
   }
 
@@ -69,10 +63,7 @@ export class Decoder {
     endDateTime: Date,
     answerDateTime: Date
   ): number {
-    // Ensure this returns the correct time difference in seconds
-    return Math.round(
-      (endDateTime.getTime() - answerDateTime.getTime()) / 1000
-    );
+    return Math.round((endDateTime.getTime() - answerDateTime.getTime()) / 1000);
   }
 
   private getRate(
@@ -88,8 +79,18 @@ export class Decoder {
   private getSingleRate(record: CallerDetailRecord, rateDetail: CdrRate): number {
     const callHour = record.answerDateTime.getHours();
     const isEconomic = rateDetail.accessCode === "95";
-    const rate = isEconomic ? rateDetail.reducedRate : 
-      (callHour >= 0 && callHour < 8) ? rateDetail.reducedRate : rateDetail.standardRate;
+    
+    console.log("Call Hour:", callHour, "Is Economic:", isEconomic);
+    console.log("Reduced Rate:", rateDetail.reducedRate, "Standard Rate:", rateDetail.standardRate);
+  
+    let rate;
+    if (isEconomic) {
+      rate = rateDetail.reducedRate;
+    } else {
+      rate = (callHour >= 0 && callHour < 8) ? rateDetail.reducedRate : rateDetail.standardRate;
+    }
+  
+    console.log("Selected Rate:", rate);
     return rate;
   }
 

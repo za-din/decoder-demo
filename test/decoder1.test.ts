@@ -1,12 +1,15 @@
-import { expect, test } from 'vitest';
+import { expect, test, vi } from 'vitest';
 import {
   Decoder,
   type CallerDetailRecord,
   type CdrRate,
   type ChargeDetail,
+  type CdrRateJson
 } from '../src/decoder1.js';
 
 test('decode with reduced rate within one day', async () => {
+
+  const consoleSpy = vi.spyOn(console, 'log');
   // Arrange
   const callDetailRecords: CallerDetailRecord[] = [
     {
@@ -32,11 +35,20 @@ test('decode with reduced rate within one day', async () => {
   const decoder = new Decoder();
 
   // Act
-  const charges: ChargeDetail[] = await decoder.decode(callDetailRecords);
+  const charges: ChargeDetail[] = await decoder.decode(callDetailRecords, cdrRates);
+
 
   // Assert
+  console.log(charges)
   expect(charges).toHaveLength(1);
   expect(charges[0].chargeAmount).toBe(300 * 0.1); // 300 seconds * 0.1 rate = 30
+  //expect(consoleSpy).toHaveBeenCalledWith("RATE ==>", expect.any(Number));
+  // If you want to see all console.log calls
+  console.log(consoleSpy.mock.calls);
+
+  // Don't forget to restore the spy
+  consoleSpy.mockRestore();
+
 });
 
 test('decode with standard rate within one day', async () => {
@@ -65,7 +77,7 @@ test('decode with standard rate within one day', async () => {
   const decoder = new Decoder();
 
   // Act
-  const charges: ChargeDetail[] = await decoder.decode(callDetailRecords);
+  const charges: ChargeDetail[] = await decoder.decode(callDetailRecords, cdrRates);
 
   // Assert
   expect(charges).toHaveLength(1);
