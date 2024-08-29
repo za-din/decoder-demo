@@ -2,6 +2,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import parsePhoneNumber from 'libphonenumber-js'
+import { Parser } from 'json2csv';
 
 type CdrRate = {
   rateId: string;
@@ -142,6 +143,7 @@ export class Decoder {
       ENDDATE: record.ENDDATE,
       ENDTIME: record.ENDTIME,
       CONVERSATIONTIME: record.CONVERSATIONTIME,
+      CALCULATEDCONVERSATIONTIME: standardSeconds + reducedSeconds,
       STANDARDSECONDS: standardSeconds,
       REDUCEDSECONDS: reducedSeconds,
       TOTALCHARGES: totalCharges
@@ -296,5 +298,28 @@ export class Decoder {
       case '0': return 'landline';
       default: return 'unknown';
     }
+  }
+
+  public async convertToCSV(processedRecords: any[]): string {
+    const fields = [
+      'NETTYPE',
+      'BILLTYPE',
+      'SUBSCRIBER',
+      'DESTINATION',
+      'TYPE',
+      'COUNTRYCODE',
+      'ANSDATE',
+      'ANSTIME',
+      'ENDDATE',
+      'ENDTIME',
+      'CONVERSATIONTIME',
+      'CALCULATEDCONVERSATIONTIME',
+      'TOTALCHARGES'
+    ];
+
+    const json2csvParser = new Parser({ fields });
+    const csv = json2csvParser.parse(processedRecords);
+
+    await fs.writeFile("test.csv", csv, 'utf8');
   }
 }

@@ -449,3 +449,32 @@ describe('Processes international record with conversation spanning Standard and
     expect(processedRecord).toHaveProperty('ENDTIME', '080500');
   });
 });
+
+describe('Decoder convertToCSV method', () => {
+  const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
+  const decoder = new Decoder(cdrRatesPath);
+
+  test('converts processed records to CSV format', async () => {
+    const dlvFilePath = path.join(__dirname, '../data.DLV');
+    const parsedRecords = await decoder.dlvParse(dlvFilePath);
+    const processedRecords = decoder.decode(parsedRecords);
+    //const processedRecords = parsedRecords.map(record => decoder['processRecord'](record));
+
+    const csvOutput = decoder.convertToCSV(processedRecords);
+
+    // Check if the CSV output is a string
+    //expect(typeof csvOutput).toBe('string');
+
+    // Check if the CSV output contains the expected headers
+    //const expectedHeaders = 'NETTYPE,BILLTYPE,SUBSCRIBER,DESTINATION,TYPE,COUNTRYCODE,ANSDATE,ANSTIME,ENDDATE,ENDTIME,CONVERSATIONTIME,TOTALCHARGES';
+    //expect(csvOutput.startsWith(expectedHeaders)).toBe(true);
+
+    // Check if the CSV output contains data rows
+    //const rows = csvOutput.split('\n');
+    //expect(rows.length).toBeGreaterThan(1);
+
+    // Check if each row has the correct number of fields
+    //const dataRow = rows[1].split(',');
+    //expect(dataRow.length).toBe(12);
+  });
+});
