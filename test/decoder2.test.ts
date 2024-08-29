@@ -1,28 +1,30 @@
-import { expect, test, vi } from 'vitest';
+import { expect, test, vi ,beforeEach, afterEach} from 'vitest';
 import { Decoder } from '../src/decoder2';
 import fs from 'fs/promises';
+import path from 'path';
 
-vi.mock('fs/promises');
 
-test('loadCdrRates loads and parses CDR rates correctly', async () => {
-  const mockCdrRates = [
-    {
-      rateId: '1',
-      countryCode: 1,
-      standardRate: 0.1,
-      reducedRate: 0.05,
-      description: 'Test Rate',
-      dialPlan: '1',
-      chargingBlockId: '1',
-      accessCode: '0'
-    }
-  ];
 
-  vi.mocked(fs.readFile).mockResolvedValue(JSON.stringify(mockCdrRates));
 
-  const decoder = new Decoder();
-  await decoder['loadCdrRates']();
 
-  expect(decoder['cdrRates']).toEqual(mockCdrRates);
-  expect(fs.readFile).toHaveBeenCalledWith('../cdr.json', 'utf-8');
+test('loadCdrRates loads actual CDR rates from file', async () => {
+  const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
+  const decoder = new Decoder(cdrRatesPath);
+
+  await decoder['loadCdrRates'](cdrRatesPath);
+
+  expect(decoder['cdrRates']).toBeDefined();
+  expect(Array.isArray(decoder['cdrRates'])).toBe(true);
+  //console.log(decoder)
+  expect(decoder['cdrRates'].length).toBeGreaterThan(0);
+
+  const firstRate = decoder['cdrRates'][0];
+  expect(firstRate).toHaveProperty('rateId');
+  expect(firstRate).toHaveProperty('countryCode');
+  expect(firstRate).toHaveProperty('standardRate');
+  expect(firstRate).toHaveProperty('reducedRate');
+  expect(firstRate).toHaveProperty('description');
+  expect(firstRate).toHaveProperty('dialPlan');
+  expect(firstRate).toHaveProperty('chargingBlockId');
+  expect(firstRate).toHaveProperty('accessCode');
 });
