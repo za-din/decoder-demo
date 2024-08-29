@@ -1,6 +1,7 @@
 
 import fs from 'fs/promises';
 import path from 'path';
+import parsePhoneNumber from 'libphonenumber-js'
 
 type CdrRate = {
   rateId: string;
@@ -93,20 +94,21 @@ export class Decoder {
     this.loadCdrRates(cdrRatesPath);
   }
 
-  private async loadCdrRates(cdrRatesPath: string = '../cdr.json'): Promise<void> {
+  private async loadCdrRates(cdrRatesPath: string): Promise<void> {
     const data = await fs.readFile(cdrRatesPath, 'utf-8');
     this.cdrRates = JSON.parse(data);
   }
 
-  async decode(dlvFilePath: string, outputJsonPath: string): Promise<void> {
+
+  async dlvParse(dlvFilePath: string): Promise<ParsedRecord[]> {
     const dlvData = await fs.readFile(dlvFilePath, 'utf-8');
     const lines = dlvData.split('\n');
-
-    const parsedRecords = lines.filter(line => line.trim()).map(line => this.parseDlvLine(line));
-    const processedRecords = parsedRecords.map(record => this.processRecord(record));
-
-    await fs.writeFile(outputJsonPath, JSON.stringify(processedRecords, null, 2));
+    return lines.filter(line => line.trim()).map(line => this.parseDlvLine(line));
   }
+
+  decode(parsedRecords: ParsedRecord[]): any[] {
+  return parsedRecords.map(record => this.processRecord(record));
+}
 
   private parseDlvLine(line: string): ParsedRecord {
     const fields = line.split('|');
@@ -120,13 +122,14 @@ export class Decoder {
   }
 
   private processRecord(record: ParsedRecord): any {
-    const ansDateTime = new Date(`${record.ANSDATE.slice(0,4)}-${record.ANSDATE.slice(4,6)}-${record.ANSDATE.slice(6,8)}T${record.ANSTIME.slice(0,2)}:${record.ANSTIME.slice(2,4)}:${record.ANSTIME.slice(4,6)}`);
-    const endDateTime = new Date(`${record.ENDDATE.slice(0,4)}-${record.ENDDATE.slice(4,6)}-${record.ENDDATE.slice(6,8)}T${record.ENDTIME.slice(0,2)}:${record.ENDTIME.slice(2,4)}:${record.ENDTIME.slice(4,6)}`);
-
+    const ansDateTime = this.createValidDate(record.ANSDATE, record.ANSTIME);
+    const endDateTime = this.createValidDate(record.ENDDATE, record.ENDTIME);
+  
+    const { standardSeconds, reducedSeconds } = this.calculateConversationTimeInSeconds(ansDateTime, endDateTime);
     const countryCode = this.getCountryCode(record.CALLEDNUMBER);
     const rate = this.getRate(countryCode, false);
-    const totalCharges = this.calculateCharges(ansDateTime, endDateTime, parseInt(record.CONVERSATIONTIME, 10), rate);
-
+    const totalCharges = this.calculateCharges(standardSeconds, reducedSeconds, rate);
+  
     return {
       NETTYPE: record.NETTYPE,
       BILLTYPE: record.BILLTYPE,
@@ -139,23 +142,85 @@ export class Decoder {
       ENDDATE: record.ENDDATE,
       ENDTIME: record.ENDTIME,
       CONVERSATIONTIME: record.CONVERSATIONTIME,
+      STANDARDSECONDS: standardSeconds,
+      REDUCEDSECONDS: reducedSeconds,
       TOTALCHARGES: totalCharges
     };
   }
+
+  private createValidDate(dateStr: string, timeStr: string): Date {
+    const day = parseInt(dateStr.slice(0, 2), 10);
+    const month = parseInt(dateStr.slice(2, 4), 10) - 1; // JS months are 0-indexed
+    const year = 2000 + parseInt(dateStr.slice(4, 6), 10); // Assuming years are in the 2000s
+    const hour = parseInt(timeStr.slice(0, 2), 10);
+    const minute = parseInt(timeStr.slice(2, 4), 10);
+    const second = parseInt(timeStr.slice(4, 6), 10);
+  
+    if (isNaN(year) || isNaN(month) || isNaN(day) || isNaN(hour) || isNaN(minute) || isNaN(second)) {
+      return new Date(); // Return current date if any part is invalid
+    }
+  
+    return new Date(year, month, day, hour, minute, second);
+  }
+
+  // private getCountryCode(calledNumber: string): number | 'default' {
+  //   if (!calledNumber || !calledNumber.startsWith('00')) {
+  //     return 'default';
+  //   }
+  //   const numberWithoutPrefix = calledNumber.substring(2);
+  //   for (let i = 4; i >= 1; i--) {
+  //     const potentialDialCode = numberWithoutPrefix.substring(0, i);
+  //     const matchedRates = this.cdrRates.filter(rate => rate.dialPlan === potentialDialCode);
+  //     if (matchedRates.length === 1 || (matchedRates.length > 1 && matchedRates.every(rate => rate.countryCode === matchedRates[0].countryCode))) {
+  //       return matchedRates[0].countryCode;
+  //     }
+  //   }
+  //   return 'default';
+  // }
+
+  // private getCountryCode(calledNumber: string): number | 'default' {
+  //   if (!calledNumber || !calledNumber.startsWith('00')) {
+  //     return 'default';
+  //   }
+  //   const numberWithoutPrefix = calledNumber.substring(2);
+  //   const phoneNumber = parsePhoneNumber('+' + numberWithoutPrefix);
+  //   return phoneNumber ? parseInt(phoneNumber.countryCallingCode) : 'default';
+  // }
 
   private getCountryCode(calledNumber: string): number | 'default' {
     if (!calledNumber || !calledNumber.startsWith('00')) {
       return 'default';
     }
     const numberWithoutPrefix = calledNumber.substring(2);
+    
+    // First, try to match using cdrRates
+    let longestMatch = null;
     for (let i = 4; i >= 1; i--) {
       const potentialDialCode = numberWithoutPrefix.substring(0, i);
       const matchedRates = this.cdrRates.filter(rate => rate.dialPlan === potentialDialCode);
-      if (matchedRates.length === 1 || (matchedRates.length > 1 && matchedRates.every(rate => rate.countryCode === matchedRates[0].countryCode))) {
-        return matchedRates[0].countryCode;
+      if (matchedRates.length > 0) {
+        longestMatch = matchedRates[0];
+        break;
       }
     }
-    return 'default';
+  
+    if (longestMatch) {
+      return longestMatch.countryCode;
+    }
+  
+    // If no match found in cdrRates, use libphonenumber-js
+    const phoneNumber = parsePhoneNumber('+' + numberWithoutPrefix);
+    return phoneNumber ? parseInt(phoneNumber.countryCallingCode) : 'default';
+  }
+  
+  private testGetCountryCode() {
+    const testData = '11|01|0|9|13082024|092305|13082024|092330|      25|    0|  0|             2330142|    0|  3|        006088265386| 65535|      |      |    47|    73|  15| 118| 10| 4|0| 0|  4|144| 1|0|    0|    0|65535|   50|  3|        006088265386|65535|   |                    |  3|  2| 0|                    006088265386|  1| 63|  3|    |15|15|                     |                     |          |          | 00000000000000000000000000000000| 00000000000000000000000000000000| 000000000000|   |   |   |65535|65535|65535|65535| 15|255|                     |';
+    
+    const fields = testData.split('|');
+    const calledNumber = fields[14].trim(); // '006088265386'
+    
+    const countryCode = this.getCountryCode(calledNumber);
+    console.log(`Country code for ${calledNumber}: ${countryCode}`);
   }
 
   private getRate(countryCode: number | 'default', economic: boolean): CdrRate {
@@ -182,13 +247,14 @@ export class Decoder {
     return defaultRate;
   }
 
-  private calculateCharges(ansDateTime: Date, endDateTime: Date, conversationTimeInSeconds: number, rate: CdrRate): number {
+  private calculateConversationTimeInSeconds(ansDateTime: Date, endDateTime: Date): { standardSeconds: number, reducedSeconds: number } {
     const startHour = ansDateTime.getHours();
     const endHour = endDateTime.getHours();
-    
+    const conversationTimeInSeconds = Math.max(0, (endDateTime.getTime() - ansDateTime.getTime()) / 1000);
+  
     let standardSeconds = 0;
     let reducedSeconds = 0;
-    
+  
     if (this.isReducedRateTime(startHour) === this.isReducedRateTime(endHour)) {
       if (this.isReducedRateTime(startHour)) {
         reducedSeconds = conversationTimeInSeconds;
@@ -201,14 +267,18 @@ export class Decoder {
       reducedSeconds = (reducedEndTime.getTime() - ansDateTime.getTime()) / 1000;
       standardSeconds = conversationTimeInSeconds - reducedSeconds;
     }
-    
-    const roundedStandardSeconds = this.roundUpToMinute(standardSeconds);
-    const roundedReducedSeconds = this.roundUpToMinute(reducedSeconds);
-    
-    const standardCharge = (roundedStandardSeconds / 60) * rate.standardRate;
-    const reducedCharge = (roundedReducedSeconds / 60) * rate.reducedRate;
-    
-    return Number((standardCharge + reducedCharge).toFixed(2));
+  
+    return { standardSeconds, reducedSeconds };
+  }
+
+  private calculateCharges(standardSeconds: number, reducedSeconds: number, rate: CdrRate): number {
+    const roundedStandardSeconds = this.roundUpToMinute(standardSeconds || 0);
+    const roundedReducedSeconds = this.roundUpToMinute(reducedSeconds || 0);
+  
+    const standardCharge = (roundedStandardSeconds / 60) * (rate.standardRate || 0);
+    const reducedCharge = (roundedReducedSeconds / 60) * (rate.reducedRate || 0);
+  
+    return Number((standardCharge + reducedCharge).toFixed(2)) || 0;
   }
 
   private isReducedRateTime(hour: number): boolean {
