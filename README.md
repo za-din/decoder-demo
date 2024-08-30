@@ -26,8 +26,24 @@ This project provides a robust CDR (Call Detail Record) decoding and processing 
 - `data.DLV`: Sample DLV file refer Google Chat Group for the file
 
 
-Next step
-Next step ,Apply the economical and non economical logic.
-select matching CDR result where is economical or non economical.
+### Running Tests
+When the tests are completed, a CSV file is generated with the processed records. The CSV file includes the following fields:
+
+- NETTYPE
+- BILLTYPE
+- SUBSCRIBER
+- DESTINATION
+- TYPE
+- ECONOMICAL
+- COUNTRYCODE
+- ANSDATE
+- ANSTIME
+- ENDDATE
+- ENDTIME
+- CONVERSATIONTIME
+- TOTALCHARGES
+
+## TODO
+
 update the local charges, voice to voice, voice to mobile (domestic call)
 
