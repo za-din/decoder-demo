@@ -15,6 +15,22 @@ beforeAll(async () => {
   parsedRecords = await decoder.dlvParse(dlvFilePath);
 });
 
+describe('Decoder', () => {
+  const dlvFilePath = path.join(__dirname, '..', 'data.DLV');
+
+  beforeAll(async () => {
+    try {
+      await fs.access(dlvFilePath);
+    } catch (error) {
+      console.error('Error: data.DLV file not found.');
+      console.log('Please download the data.DLV file from our Google Group chat and place it in the project root directory.');
+      process.exit(1);
+    }
+  });
+
+  // Your existing tests here
+
+
 test('loadCdrRates loads actual CDR rates from file', async () => {
   const decoder = new Decoder(cdrRatesPath);
 
@@ -34,6 +50,7 @@ test('loadCdrRates loads actual CDR rates from file', async () => {
   expect(firstRate).toHaveProperty('dialPlan');
   expect(firstRate).toHaveProperty('chargingBlockId');
   expect(firstRate).toHaveProperty('accessCode');
+});
 });
 
 test('dlvParse method parses DLV file correctly', async () => {
