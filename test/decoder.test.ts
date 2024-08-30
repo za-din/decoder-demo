@@ -594,9 +594,9 @@ describe('Processes international record with conversation spanning Standard and
   const internationalRecord = parsedRecords[29];
 
   internationalRecord.ANSDATE = "13082024";
-  internationalRecord.ANSTIME = "075500";
+  internationalRecord.ANSTIME = "185500";
   internationalRecord.ENDDATE = "13082024";
-  internationalRecord.ENDTIME = "080500";
+  internationalRecord.ENDTIME = "190500";
   internationalRecord.CONVERSATIONTIME = "600";
 
   const processedRecord = decoder['processRecord'](internationalRecord);
@@ -621,10 +621,52 @@ describe('Processes international record with conversation spanning Standard and
   });
 
   test('Start and End times span reduced and standard time', () => {
-    expect(processedRecord).toHaveProperty('ANSTIME', '075500');
-    expect(processedRecord).toHaveProperty('ENDTIME', '080500');
+    expect(processedRecord).toHaveProperty('ANSTIME', '185500');
+    expect(processedRecord).toHaveProperty('ENDTIME', '190500');
   });
 });
+
+// describe('7:59 - 8:61Processes international record with conversation spanning Standard and Reduced time', async () => {
+//   const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
+//   const decoder = new Decoder(cdrRatesPath);
+//   const parsedRecords = await decoder.dlvParse(dlvFilePath);
+
+//   await decoder['loadCdrRates'](cdrRatesPath);
+
+//   const internationalRecord = parsedRecords[29];
+
+//   internationalRecord.ANSDATE = "13082024";
+//   internationalRecord.ANSTIME = "075959";
+//   internationalRecord.ENDDATE = "13082024";
+//   internationalRecord.ENDTIME = "080001";
+//   internationalRecord.CONVERSATIONTIME = "2";
+
+//   const processedRecord = decoder['processRecord'](internationalRecord);
+
+//   test('Conversation Time is 10 minutes', () => {
+//     expect(processedRecord).toHaveProperty('CONVERSATIONTIME', '600');
+//   });
+
+//   test('Total Charges are calculated correctly for mixed time', () => {
+//     const reducedRate = 0.05; // Assuming reduced rate for 6088 is 0.03
+//     const standardRate = 0.06; // Assuming standard rate for 6088 is 0.06
+//     const expectedCharges = ((5 * reducedRate) + (5 * standardRate)).toFixed(2);
+//     expect(processedRecord).toHaveProperty('TOTALCHARGES', parseFloat(expectedCharges));
+//   });
+
+//   test('Type is International', () => {
+//     expect(processedRecord).toHaveProperty('CTYPE', 'international');
+//   });
+
+//   test('Country Code is correct', () => {
+//     expect(processedRecord).toHaveProperty('COUNTRYCODE', 6088);
+//   });
+
+//   test('Start and End times span reduced and standard time', () => {
+//     expect(processedRecord).toHaveProperty('ANSTIME', '075500');
+//     expect(processedRecord).toHaveProperty('ENDTIME', '080500');
+//   });
+// });
 
 describe('Decoder convertToCSV method', () => {
   const cdrRatesPath = path.resolve(__dirname, '../cdr.json');

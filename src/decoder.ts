@@ -265,29 +265,28 @@ private getCountryCode(calledNumber: string): number | 'default' {
   
 
   private calculateConversationTimeInSeconds(ansDateTime: Date, endDateTime: Date): { standardSeconds: number, reducedSeconds: number } {
-    const startHour = ansDateTime.getHours();
-    const endHour = endDateTime.getHours();
-    const conversationTimeInSeconds = Math.max(0, (endDateTime.getTime() - ansDateTime.getTime()) / 1000);
-  
     let standardSeconds = 0;
     let reducedSeconds = 0;
+    let currentTime = new Date(ansDateTime);
   
-    if (this.isReducedRateTime(startHour) === this.isReducedRateTime(endHour)) {
-      if (this.isReducedRateTime(startHour)) {
-        reducedSeconds = conversationTimeInSeconds;
+    while (currentTime < endDateTime) {
+      const nextHour = new Date(currentTime);
+      nextHour.setHours(nextHour.getHours() + 1, 0, 0, 0);
+      const segmentEnd = nextHour < endDateTime ? nextHour : endDateTime;
+      const segmentDuration = (segmentEnd.getTime() - currentTime.getTime()) / 1000;
+  
+      if (this.isReducedRateTime(currentTime)) {
+        reducedSeconds += segmentDuration;
       } else {
-        standardSeconds = conversationTimeInSeconds;
+        standardSeconds += segmentDuration;
       }
-    } else {
-      const reducedEndTime = new Date(ansDateTime);
-      reducedEndTime.setHours(8, 0, 0, 0);
-      reducedSeconds = (reducedEndTime.getTime() - ansDateTime.getTime()) / 1000;
-      standardSeconds = conversationTimeInSeconds - reducedSeconds;
+  
+      currentTime = segmentEnd;
     }
   
     return { standardSeconds, reducedSeconds };
   }
-
+  
   private calculateCharges(standardSeconds: number, reducedSeconds: number, rate: CdrRate): number {
     const roundedStandardSeconds = this.roundUpToMinute(standardSeconds || 0);
     const roundedReducedSeconds = this.roundUpToMinute(reducedSeconds || 0);
@@ -297,10 +296,18 @@ private getCountryCode(calledNumber: string): number | 'default' {
   
     return Number((standardCharge + reducedCharge).toFixed(2)) || 0;
   }
-
-  private isReducedRateTime(hour: number): boolean {
-    return hour >= 0 && hour < 8;
+  
+  private isReducedRateTime(dateTime: Date): boolean {
+    const hour = dateTime.getHours();
+    const day = dateTime.getDay();
+  
+    if (day === 0 || day === 6) {
+      return true;
+    }
+  
+    return (hour >= 19 || hour < 7);
   }
+  
 
   private roundUpToMinute(seconds: number): number {
     return Math.ceil(seconds / 60) * 60;
