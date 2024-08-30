@@ -66,7 +66,7 @@ test('decode method processes parsed records correctly', async () => {
   expect(firstProcessedRecord).toHaveProperty('BILLTYPE');
   expect(firstProcessedRecord).toHaveProperty('SUBSCRIBER');
   expect(firstProcessedRecord).toHaveProperty('DESTINATION');
-  expect(firstProcessedRecord).toHaveProperty('TYPE');
+  expect(firstProcessedRecord).toHaveProperty('CTYPE');
   expect(firstProcessedRecord).toHaveProperty('COUNTRYCODE');
   expect(firstProcessedRecord).toHaveProperty('ANSDATE');
   expect(firstProcessedRecord).toHaveProperty('ANSTIME');
@@ -81,7 +81,7 @@ test('decode method processes Domestic record correctly', () => {
   const landlineRecord = parsedRecords[0];
   const processedRecord = decoder['processRecord'](landlineRecord);
 
-  expect(processedRecord).toHaveProperty('TYPE', 'landline');
+  expect(processedRecord).toHaveProperty('CTYPE', 'landline');
   expect(processedRecord).toHaveProperty('SUBSCRIBER', landlineRecord.CALLERNUMBER);
   expect(processedRecord).toHaveProperty('DESTINATION', landlineRecord.CALLEDNUMBER);
   expect(processedRecord).toHaveProperty('ANSDATE', landlineRecord.ANSDATE);
@@ -91,7 +91,8 @@ test('decode method processes Domestic record correctly', () => {
   expect(processedRecord).toHaveProperty('CONVERSATIONTIME', landlineRecord.CONVERSATIONTIME);
 });
 
-describe('decode method processes Domestic  record correctly', async () => {
+//LANDLINE VOICE TO VOICE
+describe('decode method processes Landline record correctly', async () => {
   const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
   const decoder = new Decoder(cdrRatesPath);
   const parsedRecords = await decoder.dlvParse(dlvFilePath);
@@ -104,7 +105,7 @@ describe('decode method processes Domestic  record correctly', async () => {
   const processedRecord = decoder['processRecord'](internationalRecord);
 
   test('Type is landline', () => {
-    expect(processedRecord).toHaveProperty('TYPE', 'landline');
+    expect(processedRecord).toHaveProperty('CTYPE', 'landline');
   });
 
   test('Subscriber matches', () => {
@@ -131,7 +132,7 @@ describe('decode method processes Domestic  record correctly', async () => {
   });
 });
 
-describe('Process Domestic record with 5-minute STANDARD TIME conversation', async () => {
+describe('Process Landline record with 5-minute STANDARD TIME conversation', async () => {
   
  
     
@@ -157,13 +158,13 @@ describe('Process Domestic record with 5-minute STANDARD TIME conversation', asy
   });
 
   test('Total Charges are calculated correctly', () => {
-    const expectedRate = 0.1; // Assuming standard rate for 6088 is 0.1
+    const expectedRate = 0.03;
     const expectedCharges = (5 * expectedRate).toFixed(2);
     expect(processedRecord).toHaveProperty('TOTALCHARGES', parseFloat(expectedCharges));
   });
 
   test('Type is landline', () => {
-    expect(processedRecord).toHaveProperty('TYPE', 'landline');
+    expect(processedRecord).toHaveProperty('CTYPE', 'landline');
   });
 
   test('Country Code is correct (null)', () => {
@@ -178,7 +179,7 @@ describe('Process Domestic record with 5-minute STANDARD TIME conversation', asy
 
 
 
-describe('Process Domestic Record with 5-minute REDUCED TIME conversation', async () => {
+describe('Process Landline Record with 5-minute REDUCED TIME conversation', async () => {
   const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
   const decoder = new Decoder(cdrRatesPath);
   const parsedRecords = await decoder.dlvParse(dlvFilePath);
@@ -200,13 +201,13 @@ describe('Process Domestic Record with 5-minute REDUCED TIME conversation', asyn
   });
 
   test('Total Charges are calculated correctly for reduced time', () => {
-    const expectedRate = 0.05; // Assuming reduced rate for 6088 is 0.03
+    const expectedRate = 0.03; // Assuming reduced rate for 6088 is 0.03
     const expectedCharges = (5 * expectedRate).toFixed(2);
     expect(processedRecord).toHaveProperty('TOTALCHARGES', parseFloat(expectedCharges));
   });
 
   test('Type is landline', () => {
-    expect(processedRecord).toHaveProperty('TYPE', 'landline');
+    expect(processedRecord).toHaveProperty('CTYPE', 'landline');
   });
 
   test('Country Code is correct (null)', () => {
@@ -220,7 +221,7 @@ describe('Process Domestic Record with 5-minute REDUCED TIME conversation', asyn
 });
 
 
-describe('Processes Domestic record with conversation spanning Standard and Reduced time', async () => {
+describe('Processes Landline record with conversation spanning Standard and Reduced time', async () => {
   const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
   const decoder = new Decoder(cdrRatesPath);
   const parsedRecords = await decoder.dlvParse(dlvFilePath);
@@ -242,14 +243,14 @@ describe('Processes Domestic record with conversation spanning Standard and Redu
   });
 
   test('Total Charges are calculated correctly for mixed time', () => {
-    const reducedRate = 0.05; // Assuming reduced rate for 6088 is 0.03
-    const standardRate = 0.1; // Assuming standard rate for 6088 is 0.06
+    const reducedRate = 0.03; // Assuming reduced rate for 6088 is 0.03
+    const standardRate = 0.03; // Assuming standard rate for 6088 is 0.06
     const expectedCharges = ((5 * reducedRate) + (5 * standardRate)).toFixed(2);
     expect(processedRecord).toHaveProperty('TOTALCHARGES', parseFloat(expectedCharges));
   });
 
   test('Type is Landline', () => {
-    expect(processedRecord).toHaveProperty('TYPE', 'landline');
+    expect(processedRecord).toHaveProperty('CTYPE', 'landline');
   });
 
   test('Country Code is correct (null)', () => {
@@ -261,13 +262,186 @@ describe('Processes Domestic record with conversation spanning Standard and Redu
     expect(processedRecord).toHaveProperty('ENDTIME', '080500');
   });
 });
-//end Domestic test
+//end LANDLINE test
+
+//LANDLINE VOICE TO VOICE
+describe('decode method processes Mobile record correctly', async () => {
+  const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
+  const decoder = new Decoder(cdrRatesPath);
+  const parsedRecords = await decoder.dlvParse(dlvFilePath);
+  
+  
+  await decoder['loadCdrRates'](cdrRatesPath);
+  
+  const internationalRecord = parsedRecords[2];
+
+  const processedRecord = decoder['processRecord'](internationalRecord);
+
+  test('Type is landline', () => {
+    expect(processedRecord).toHaveProperty('CTYPE', 'mobile');
+  });
+
+  test('Subscriber matches', () => {
+    expect(processedRecord).toHaveProperty('SUBSCRIBER', internationalRecord.CALLERNUMBER);
+  });
+
+  test('Destination matches', () => {
+    expect(processedRecord).toHaveProperty('DESTINATION', internationalRecord.CALLEDNUMBER);
+  });
+
+  test('Date and Time match', () => {
+    expect(processedRecord).toHaveProperty('ANSDATE', internationalRecord.ANSDATE);
+    expect(processedRecord).toHaveProperty('ANSTIME', internationalRecord.ANSTIME);
+    expect(processedRecord).toHaveProperty('ENDDATE', internationalRecord.ENDDATE);
+    expect(processedRecord).toHaveProperty('ENDTIME', internationalRecord.ENDTIME);
+  });
+
+  test('Conversation Time matches', () => {
+    expect(processedRecord).toHaveProperty('CONVERSATIONTIME', internationalRecord.CONVERSATIONTIME.trim());
+  });
+
+  test('Country Code is correct (null)', () => {
+    expect(processedRecord).toHaveProperty('COUNTRYCODE', null);
+  });
+});
+
+describe('Process Mobile record with 5-minute STANDARD TIME conversation', async () => {
+  
+ 
+    
+  const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
+  const decoder = new Decoder(cdrRatesPath);
+  const parsedRecords = await decoder.dlvParse(dlvFilePath);
+  
+  
+  await decoder['loadCdrRates'](cdrRatesPath);
+  
+  const internationalRecord = parsedRecords[2];
+
+  internationalRecord.ANSDATE = "13082024";
+  internationalRecord.ANSTIME = "100000";
+  internationalRecord.ENDDATE = "13082024";
+  internationalRecord.ENDTIME = "100500";
+  internationalRecord.CONVERSATIONTIME = "300";
+
+  const processedRecord = decoder['processRecord'](internationalRecord);
+
+  test('Conversation Time is 5 minutes', () => {
+    expect(processedRecord).toHaveProperty('CONVERSATIONTIME', '300');
+  });
+
+  test('Total Charges are calculated correctly', () => {
+    const expectedRate = 0.05;
+    const expectedCharges = (5 * expectedRate).toFixed(2);
+    expect(processedRecord).toHaveProperty('TOTALCHARGES', parseFloat(expectedCharges));
+  });
+
+  test('Type is landline', () => {
+    expect(processedRecord).toHaveProperty('CTYPE', 'mobile');
+  });
+
+  test('Country Code is correct (null)', () => {
+    expect(processedRecord).toHaveProperty('COUNTRYCODE', null);
+  });
+
+  test('Start and End times are correct', () => {
+    expect(processedRecord).toHaveProperty('ANSTIME', '100000');
+    expect(processedRecord).toHaveProperty('ENDTIME', '100500');
+  });
+});
+
+
+
+describe('Process Mobile Record with 5-minute REDUCED TIME conversation', async () => {
+  const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
+  const decoder = new Decoder(cdrRatesPath);
+  const parsedRecords = await decoder.dlvParse(dlvFilePath);
+
+  await decoder['loadCdrRates'](cdrRatesPath);
+
+  const internationalRecord = parsedRecords[2];
+
+  internationalRecord.ANSDATE = "13082024";
+  internationalRecord.ANSTIME = "030000";
+  internationalRecord.ENDDATE = "13082024";
+  internationalRecord.ENDTIME = "030500";
+  internationalRecord.CONVERSATIONTIME = "300";
+
+  const processedRecord = decoder['processRecord'](internationalRecord);
+
+  test('Conversation Time is 5 minutes', () => {
+    expect(processedRecord).toHaveProperty('CONVERSATIONTIME', '300');
+  });
+
+  test('Total Charges are calculated correctly for reduced time', () => {
+    const expectedRate = 0.05; // Assuming reduced rate for 6088 is 0.03
+    const expectedCharges = (5 * expectedRate).toFixed(2);
+    expect(processedRecord).toHaveProperty('TOTALCHARGES', parseFloat(expectedCharges));
+  });
+
+  test('Type is landline', () => {
+    expect(processedRecord).toHaveProperty('CTYPE', 'mobile');
+  });
+
+  test('Country Code is correct (null)', () => {
+    expect(processedRecord).toHaveProperty('COUNTRYCODE', null);
+  });
+
+  test('Start and End times are correct for reduced time', () => {
+    expect(processedRecord).toHaveProperty('ANSTIME', '030000');
+    expect(processedRecord).toHaveProperty('ENDTIME', '030500');
+  });
+});
+
+
+describe('Processes Mobile record with conversation spanning Standard and Reduced time', async () => {
+  const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
+  const decoder = new Decoder(cdrRatesPath);
+  const parsedRecords = await decoder.dlvParse(dlvFilePath);
+
+  await decoder['loadCdrRates'](cdrRatesPath);
+
+  const internationalRecord = parsedRecords[2];
+
+  internationalRecord.ANSDATE = "13082024";
+  internationalRecord.ANSTIME = "075500";
+  internationalRecord.ENDDATE = "13082024";
+  internationalRecord.ENDTIME = "080500";
+  internationalRecord.CONVERSATIONTIME = "600";
+
+  const processedRecord = decoder['processRecord'](internationalRecord);
+
+  test('Conversation Time is 10 minutes', () => {
+    expect(processedRecord).toHaveProperty('CONVERSATIONTIME', '600');
+  });
+
+  test('Total Charges are calculated correctly for mixed time', () => {
+    const reducedRate = 0.05; // Assuming reduced rate for 6088 is 0.03
+    const standardRate = 0.05; // Assuming standard rate for 6088 is 0.06
+    const expectedCharges = ((5 * reducedRate) + (5 * standardRate)).toFixed(2);
+    expect(processedRecord).toHaveProperty('TOTALCHARGES', parseFloat(expectedCharges));
+  });
+
+  test('Type is Landline', () => {
+    expect(processedRecord).toHaveProperty('CTYPE', 'mobile');
+  });
+
+  test('Country Code is correct (null)', () => {
+    expect(processedRecord).toHaveProperty('COUNTRYCODE', null);
+  });
+
+  test('Start and End times span reduced and standard time', () => {
+    expect(processedRecord).toHaveProperty('ANSTIME', '075500');
+    expect(processedRecord).toHaveProperty('ENDTIME', '080500');
+  });
+});
+//end Mobile test
 
 test('decode method processes international record correctly', () => {
   const internationalRecord = parsedRecords[29];
   const processedRecord = decoder['processRecord'](internationalRecord);
 
-  expect(processedRecord).toHaveProperty('TYPE', 'international');
+  expect(processedRecord).toHaveProperty('CTYPE', 'international');
   expect(processedRecord).toHaveProperty('SUBSCRIBER', internationalRecord.CALLERNUMBER);
   expect(processedRecord).toHaveProperty('DESTINATION', internationalRecord.CALLEDNUMBER);
   expect(processedRecord).toHaveProperty('ANSDATE', internationalRecord.ANSDATE);
@@ -292,7 +466,7 @@ describe('decode method processes international record correctly', async () => {
   const processedRecord = decoder['processRecord'](internationalRecord);
 
   test('Type is International', () => {
-    expect(processedRecord).toHaveProperty('TYPE', 'international');
+    expect(processedRecord).toHaveProperty('CTYPE', 'international');
   });
 
   test('Subscriber matches', () => {
@@ -351,7 +525,7 @@ describe('Process International record with 5-minute STANDARD TIME conversation'
   });
 
   test('Type is International', () => {
-    expect(processedRecord).toHaveProperty('TYPE', 'international');
+    expect(processedRecord).toHaveProperty('CTYPE', 'international');
   });
 
   test('Country Code is correct', () => {
@@ -394,7 +568,7 @@ describe('Process International Record with 5-minute REDUCED TIME conversation',
   });
 
   test('Type is International', () => {
-    expect(processedRecord).toHaveProperty('TYPE', 'international');
+    expect(processedRecord).toHaveProperty('CTYPE', 'international');
   });
 
   test('Country Code is correct', () => {
@@ -437,7 +611,7 @@ describe('Processes international record with conversation spanning Standard and
   });
 
   test('Type is International', () => {
-    expect(processedRecord).toHaveProperty('TYPE', 'international');
+    expect(processedRecord).toHaveProperty('CTYPE', 'international');
   });
 
   test('Country Code is correct', () => {

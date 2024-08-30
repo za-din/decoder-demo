@@ -129,7 +129,8 @@ export class Decoder {
     const { standardSeconds, reducedSeconds } = this.calculateConversationTimeInSeconds(ansDateTime, endDateTime);
     const countryCode = this.getCountryCode(record.CALLEDNUMBER);
     const isEconomical = this.isEconomical(record.CALLEDNUMBER);
-    const rate = this.getRate(countryCode, isEconomical);
+    const callerType = this.getCallType(record.CALLEDADDRESSNATURE)
+    const rate = this.getRate(countryCode, isEconomical, callerType);
     const totalCharges = this.calculateCharges(standardSeconds, reducedSeconds, rate);
   
     return {
@@ -137,7 +138,7 @@ export class Decoder {
       BILLTYPE: record.BILLTYPE,
       SUBSCRIBER: record.CALLERNUMBER,
       DESTINATION: record.CALLEDNUMBER,
-      TYPE: this.getCallType(record.CALLEDADDRESSNATURE),
+      CTYPE: callerType,
       ECONOMICAL: isEconomical,
       COUNTRYCODE: countryCode === 'default' ? null : countryCode,
       ANSDATE: record.ANSDATE,
@@ -220,32 +221,48 @@ private getCountryCode(calledNumber: string): number | 'default' {
     console.log(`Country code for ${calledNumber}: ${countryCode}`);
   }
 
-  private getRate(countryCode: number | 'default', economic: boolean): CdrRate {
-
-    //TODO:
-    //need to update this. for voice to voice, voice to mobile, refer the notes
+  private getRate(countryCode: number | 'default', economic: boolean, callerType: string): CdrRate {
     const defaultRate: CdrRate = {
       rateId: 'default',
       countryCode: 0,
-      standardRate: 0.1,
-      reducedRate: 0.05,
+      standardRate: 0.3,
+      reducedRate: 0.03,
       description: 'Default Rate',
       dialPlan: '',
       chargingBlockId: '',
       accessCode: '0'
     };
-
+  
+    if (callerType === 'landline') {
+      return {
+        ...defaultRate,
+        standardRate: 0.03,
+        reducedRate: 0.03,
+        description: 'Landline Rate'
+      };
+    }
+  
+    if (callerType === 'mobile') {
+      return {
+        ...defaultRate,
+        standardRate: 0.05,
+        reducedRate: 0.05,
+        description: 'Mobile Rate'
+      };
+    }
+  
     if (countryCode === 'default') {
       return defaultRate;
     }
-
+  
     const matchedRates = this.cdrRates.filter(rate => rate.countryCode === countryCode);
     if (matchedRates.length > 0) {
       return economic ? matchedRates.find(rate => rate.accessCode === "95") || matchedRates[0] : matchedRates.find(rate => rate.accessCode === "0") || matchedRates[0];
     }
-
+  
     return defaultRate;
   }
+  
 
   private calculateConversationTimeInSeconds(ansDateTime: Date, endDateTime: Date): { standardSeconds: number, reducedSeconds: number } {
     const startHour = ansDateTime.getHours();
@@ -304,7 +321,7 @@ private getCountryCode(calledNumber: string): number | 'default' {
       'BILLTYPE',
       'SUBSCRIBER',
       'DESTINATION',
-      'TYPE',
+      'CTYPE',
       'ECONOMICAL',
       'COUNTRYCODE',
       'ANSDATE',
