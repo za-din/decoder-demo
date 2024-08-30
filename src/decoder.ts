@@ -132,6 +132,19 @@ export class Decoder {
     const callerType = this.getCallType(record.CALLEDADDRESSNATURE)
     const rate = this.getRate(countryCode, isEconomical, callerType);
     const totalCharges = this.calculateCharges(standardSeconds, reducedSeconds, rate);
+    //This is Approach B
+    //const totalCharges = this.calculateChargesApproachB(ansDateTime, endDateTime, rate);
+
+    //This for the configurable blocks
+    // For 30-second blocks
+    //const charges30Sec = this.calculateChargesWithConfigurableBlock(standardSeconds, reducedSeconds, rate, 30);
+
+    // For 6-second blocks
+    //const charges6Sec = this.calculateChargesWithConfigurableBlock(standardSeconds, reducedSeconds, rate, 6);
+
+    // Default 60-second blocks
+    //const charges60Sec = this.calculateChargesWithConfigurableBlock(standardSeconds, reducedSeconds, rate);
+
   
     return {
       NETTYPE: record.NETTYPE,
@@ -167,11 +180,6 @@ export class Decoder {
   
     return new Date(year, month, day, hour, minute, second);
   }
-
-  
-//TODO
-//Need to update to check if economical no not. base on the number Starts WIth 00, 095, 098, 099.
-//Edit the matched rate to select either where access_code = 0 or 95.
 
 private isEconomical(number: string): boolean {
   if (number.startsWith('00')) {
@@ -307,8 +315,38 @@ private getCountryCode(calledNumber: string): number | 'default' {
   
     return (hour >= 19 || hour < 7);
   }
+
+
+  //this approach is for configurable charging block 
+  private calculateChargesWithConfigurableBlock(standardSeconds: number, reducedSeconds: number, rate: CdrRate, chargingBlockInSeconds: number = 60): number {
+    const roundToBlock = (seconds: number) => Math.ceil(seconds / chargingBlockInSeconds) * chargingBlockInSeconds;
+  
+    const roundedStandardSeconds = roundToBlock(standardSeconds || 0);
+    const roundedReducedSeconds = roundToBlock(reducedSeconds || 0);
+  
+    const standardCharge = (roundedStandardSeconds / 60) * (rate.standardRate || 0);
+    const reducedCharge = (roundedReducedSeconds / 60) * (rate.reducedRate || 0);
+  
+    return Number((standardCharge + reducedCharge).toFixed(2)) || 0;
+  }
+
+
+  //Approach B is charging by the initial start time range either Standard and Reduced Rate
+  //it doesnt care the ending time range
+  private calculateChargesApproachB(ansDateTime: Date, endDateTime: Date, rate: CdrRate): number {
+    const conversationTimeInSeconds = Math.max(0, (endDateTime.getTime() - ansDateTime.getTime()) / 1000);
+    const roundedMinutes = Math.ceil(conversationTimeInSeconds / 60);
+  
+    const isReducedRate = this.isReducedRateTime(ansDateTime);
+    const applicableRate = isReducedRate ? rate.reducedRate : rate.standardRate;
+  
+    const totalCharge = roundedMinutes * applicableRate;
+  
+    return Number(totalCharge.toFixed(2));
+  }
   
 
+  // can be renamed or refactor for charging block
   private roundUpToMinute(seconds: number): number {
     return Math.ceil(seconds / 60) * 60;
   }
