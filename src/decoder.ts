@@ -128,7 +128,8 @@ export class Decoder {
   
     const { standardSeconds, reducedSeconds } = this.calculateConversationTimeInSeconds(ansDateTime, endDateTime);
     const countryCode = this.getCountryCode(record.CALLEDNUMBER);
-    const rate = this.getRate(countryCode, false);
+    const isEconomical = this.isEconomical(record.CALLEDNUMBER);
+    const rate = this.getRate(countryCode, isEconomical);
     const totalCharges = this.calculateCharges(standardSeconds, reducedSeconds, rate);
   
     return {
@@ -137,6 +138,7 @@ export class Decoder {
       SUBSCRIBER: record.CALLERNUMBER,
       DESTINATION: record.CALLEDNUMBER,
       TYPE: this.getCallType(record.CALLEDADDRESSNATURE),
+      ECONOMICAL: isEconomical,
       COUNTRYCODE: countryCode === 'default' ? null : countryCode,
       ANSDATE: record.ANSDATE,
       ANSTIME: record.ANSTIME,
@@ -169,31 +171,44 @@ export class Decoder {
 //TODO
 //Need to update to check if economical no not. base on the number Starts WIth 00, 095, 098, 099.
 //Edit the matched rate to select either where access_code = 0 or 95.
-  private getCountryCode(calledNumber: string): number | 'default' {
-    if (!calledNumber || !calledNumber.startsWith('00')) {
-      return 'default';
-    }
-    const numberWithoutPrefix = calledNumber.substring(2);
-    
-    // First, try to match using cdrRates
-    let longestMatch = null;
-    for (let i = 4; i >= 1; i--) {
-      const potentialDialCode = numberWithoutPrefix.substring(0, i);
-      const matchedRates = this.cdrRates.filter(rate => rate.dialPlan === potentialDialCode);
-      if (matchedRates.length > 0) {
-        longestMatch = matchedRates[0];
-        break;
-      }
-    }
-  
-    if (longestMatch) {
-      return longestMatch.countryCode;
-    }
-  
-    // If no match found in cdrRates, use libphonenumber-js
-    const phoneNumber = parsePhoneNumber('+' + numberWithoutPrefix);
-    return phoneNumber ? parseInt(phoneNumber.countryCallingCode) : 'default';
+
+private isEconomical(number: string): boolean {
+  if (number.startsWith('00')) {
+    return false;
   }
+  return ['095', '098', '097'].some(prefix => number.startsWith(prefix));
+}
+
+private getCountryCode(calledNumber: string): number | 'default' {
+  const validPrefixes = ['00', '095', '097', '098', '099'];
+  const prefix = validPrefixes.find(p => calledNumber.startsWith(p));
+
+  if (!calledNumber || !prefix) {
+    return 'default';
+  }
+
+  const numberWithoutPrefix = calledNumber.substring(prefix.length);
+
+  // First, try to match using cdrRates
+  let longestMatch = null;
+  for (let i = 4; i >= 1; i--) {
+    const potentialDialCode = numberWithoutPrefix.substring(0, i);
+    const matchedRates = this.cdrRates.filter(rate => rate.dialPlan === potentialDialCode);
+    if (matchedRates.length > 0) {
+      longestMatch = matchedRates[0];
+      break;
+    }
+  }
+
+  if (longestMatch) {
+    return longestMatch.countryCode;
+  }
+
+  // If no match found in cdrRates, use libphonenumber-js
+  const phoneNumber = parsePhoneNumber('+' + numberWithoutPrefix);
+  return phoneNumber ? parseInt(phoneNumber.countryCallingCode) : 'default';
+}
+
   
   private testGetCountryCode() {
     const testData = '11|01|0|9|13082024|092305|13082024|092330|      25|    0|  0|             2330142|    0|  3|        006088265386| 65535|      |      |    47|    73|  15| 118| 10| 4|0| 0|  4|144| 1|0|    0|    0|65535|   50|  3|        006088265386|65535|   |                    |  3|  2| 0|                    006088265386|  1| 63|  3|    |15|15|                     |                     |          |          | 00000000000000000000000000000000| 00000000000000000000000000000000| 000000000000|   |   |   |65535|65535|65535|65535| 15|255|                     |';
@@ -290,6 +305,7 @@ export class Decoder {
       'SUBSCRIBER',
       'DESTINATION',
       'TYPE',
+      'ECONOMICAL',
       'COUNTRYCODE',
       'ANSDATE',
       'ANSTIME',
