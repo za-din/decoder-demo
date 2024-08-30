@@ -626,6 +626,48 @@ describe('Processes international record with conversation spanning Standard and
   });
 });
 
+describe('Processes international record with conversation spanning Monday Reduced Time to Monday Standard Time', async () => {
+  const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
+  const decoder = new Decoder(cdrRatesPath);
+  const parsedRecords = await decoder.dlvParse(dlvFilePath);
+
+  await decoder['loadCdrRates'](cdrRatesPath);
+
+  const internationalRecord = parsedRecords[29];
+
+  internationalRecord.ANSDATE = "26082024";
+  internationalRecord.ANSTIME = "065500";
+  internationalRecord.ENDDATE = "26082024";
+  internationalRecord.ENDTIME = "070500";
+  internationalRecord.CONVERSATIONTIME = "600";
+
+  const processedRecord = decoder['processRecord'](internationalRecord);
+
+  test('Conversation Time is 10 minutes', () => {
+    expect(processedRecord).toHaveProperty('CONVERSATIONTIME', '600');
+  });
+
+  test('Total Charges are calculated correctly for mixed time', () => {
+    const reducedRate = 0.05;
+    const standardRate = 0.06;
+    const expectedCharges = ((5 * reducedRate) + (5 * standardRate)).toFixed(2);
+    expect(processedRecord).toHaveProperty('TOTALCHARGES', parseFloat(expectedCharges));
+  });
+
+  test('Type is International', () => {
+    expect(processedRecord).toHaveProperty('CTYPE', 'international');
+  });
+
+  test('Country Code is correct', () => {
+    expect(processedRecord).toHaveProperty('COUNTRYCODE', 6088);
+  });
+
+  test('Start and End times span reduced and standard time', () => {
+    expect(processedRecord).toHaveProperty('ANSTIME', '065500');
+    expect(processedRecord).toHaveProperty('ENDTIME', '070500');
+  });
+});
+
 // describe('7:59 - 8:61Processes international record with conversation spanning Standard and Reduced time', async () => {
 //   const cdrRatesPath = path.resolve(__dirname, '../cdr.json');
 //   const decoder = new Decoder(cdrRatesPath);
