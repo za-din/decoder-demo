@@ -165,30 +165,10 @@ export class Decoder {
     return new Date(year, month, day, hour, minute, second);
   }
 
-  // private getCountryCode(calledNumber: string): number | 'default' {
-  //   if (!calledNumber || !calledNumber.startsWith('00')) {
-  //     return 'default';
-  //   }
-  //   const numberWithoutPrefix = calledNumber.substring(2);
-  //   for (let i = 4; i >= 1; i--) {
-  //     const potentialDialCode = numberWithoutPrefix.substring(0, i);
-  //     const matchedRates = this.cdrRates.filter(rate => rate.dialPlan === potentialDialCode);
-  //     if (matchedRates.length === 1 || (matchedRates.length > 1 && matchedRates.every(rate => rate.countryCode === matchedRates[0].countryCode))) {
-  //       return matchedRates[0].countryCode;
-  //     }
-  //   }
-  //   return 'default';
-  // }
-
-  // private getCountryCode(calledNumber: string): number | 'default' {
-  //   if (!calledNumber || !calledNumber.startsWith('00')) {
-  //     return 'default';
-  //   }
-  //   const numberWithoutPrefix = calledNumber.substring(2);
-  //   const phoneNumber = parsePhoneNumber('+' + numberWithoutPrefix);
-  //   return phoneNumber ? parseInt(phoneNumber.countryCallingCode) : 'default';
-  // }
-
+  
+//TODO
+//Need to update to check if economical no not. base on the number Starts WIth 00, 095, 098, 099.
+//Edit the matched rate to select either where access_code = 0 or 95.
   private getCountryCode(calledNumber: string): number | 'default' {
     if (!calledNumber || !calledNumber.startsWith('00')) {
       return 'default';
@@ -226,6 +206,9 @@ export class Decoder {
   }
 
   private getRate(countryCode: number | 'default', economic: boolean): CdrRate {
+
+    //TODO:
+    //need to update this. for voice to voice, voice to mobile, refer the notes
     const defaultRate: CdrRate = {
       rateId: 'default',
       countryCode: 0,
