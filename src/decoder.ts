@@ -100,7 +100,7 @@ export class Decoder {
     this.cdrRates = JSON.parse(data);
   }
 
-
+//Parse whole file into an array of parsed records
   async dlvParse(dlvFilePath: string): Promise<ParsedRecord[]> {
     const dlvData = await fs.readFile(dlvFilePath, 'utf-8');
     const lines = dlvData.split('\n');
@@ -111,6 +111,7 @@ export class Decoder {
   return parsedRecords.map(record => this.processRecord(record));
 }
 
+//Parsing each record for the parsed Records
   private parseDlvLine(line: string): ParsedRecord {
     const fields = line.split('|');
     const parsedRecord: ParsedRecord = {};
@@ -122,6 +123,7 @@ export class Decoder {
     return parsedRecord;
   }
 
+  //Processing each record for the parsed Records
   private processRecord(record: ParsedRecord): any {
     const ansDateTime = this.createValidDate(record.ANSDATE, record.ANSTIME);
     const endDateTime = this.createValidDate(record.ENDDATE, record.ENDTIME);
@@ -131,7 +133,9 @@ export class Decoder {
     const isEconomical = this.isEconomical(record.CALLEDNUMBER);
     const callerType = this.getCallType(record.CALLEDADDRESSNATURE)
     const rate = this.getRate(countryCode, isEconomical, callerType);
-    const totalCharges = this.calculateCharges(standardSeconds, reducedSeconds, rate);
+    
+    //This is Approach A
+    //const totalCharges = this.calculateCharges(standardSeconds, reducedSeconds, rate);
     //This is Approach B
     //const totalCharges = this.calculateChargesApproachB(ansDateTime, endDateTime, rate);
 
@@ -140,10 +144,10 @@ export class Decoder {
     //const charges30Sec = this.calculateChargesWithConfigurableBlock(standardSeconds, reducedSeconds, rate, 30);
 
     // For 6-second blocks
-    //const charges6Sec = this.calculateChargesWithConfigurableBlock(standardSeconds, reducedSeconds, rate, 6);
+    //const totalCharges = this.calculateChargesWithConfigurableBlock(standardSeconds, reducedSeconds, rate, 6);
 
     // Default 60-second blocks
-    //const charges60Sec = this.calculateChargesWithConfigurableBlock(standardSeconds, reducedSeconds, rate);
+    const totalCharges = this.calculateChargesWithConfigurableBlock(standardSeconds, reducedSeconds, rate);
 
   
     return {
@@ -295,6 +299,8 @@ private getCountryCode(calledNumber: string): number | 'default' {
     return { standardSeconds, reducedSeconds };
   }
   
+
+  //current approach
   private calculateCharges(standardSeconds: number, reducedSeconds: number, rate: CdrRate): number {
     const roundedStandardSeconds = this.roundUpToMinute(standardSeconds || 0);
     const roundedReducedSeconds = this.roundUpToMinute(reducedSeconds || 0);
@@ -317,7 +323,7 @@ private getCountryCode(calledNumber: string): number | 'default' {
   }
 
 
-  //this approach is for configurable charging block 
+  //this approach is for configurable charging block and it is not used in the current code
   private calculateChargesWithConfigurableBlock(standardSeconds: number, reducedSeconds: number, rate: CdrRate, chargingBlockInSeconds: number = 60): number {
     const roundToBlock = (seconds: number) => Math.ceil(seconds / chargingBlockInSeconds) * chargingBlockInSeconds;
   
